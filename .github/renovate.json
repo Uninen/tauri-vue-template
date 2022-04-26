@@ -12,7 +12,7 @@
       "enabled": false
     },
     {
-      "matchDataSources": [
+      "matchManagers": [
         "npm"
       ],
       "stabilityDays": 4,
