@@ -21,7 +21,7 @@ pnpm i
 
 ## Usage
 
-#### Running Development Server
+#### Running Tauri + Vite Development Server
 
 ```sh
 pnpm dev

@@ -6,13 +6,15 @@ import { resolve } from 'path'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  clearScreen: false,
   plugins: [
     vue(),
     AutoImport({
       imports: ['vue'],
-      dts: 'src/auto-imports.d.ts',
+      dts: './src/auto-imports.d.ts',
       eslintrc: {
         enabled: true,
+        filepath: resolve(__dirname, '.eslintrc-auto-import.json'),
       },
     }),
   ],
