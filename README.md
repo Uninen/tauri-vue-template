@@ -41,6 +41,12 @@ pnpm test
 pnpm build
 ```
 
+## Roadmap
+
+- [ ] Build + release with GitHub Actions
+- [ ] Add basic usability features
+- [ ] Add documentation for devtools etc
+
 ## Elsewhere
 
 - [Follow @uninen](https://twitter.com/uninen) on Twitter
