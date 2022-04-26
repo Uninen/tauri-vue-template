@@ -23,5 +23,8 @@ dist-ssr
 *.sln
 *.sw?
 
+.vscode
+src-tauri/target
+
 .env
 LOCAL_NOTES.md
