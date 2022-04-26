@@ -1,8 +1,9 @@
+const resolve = require('path').resolve
 // const plugin = require('tailwindcss/plugin')
 // const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
-  content: ['./index.html', './src/**/*.{vue,ts}'],
+  content: [resolve(__dirname, 'index.html'), resolve(__dirname, 'src/**/*.{vue,ts}')],
   // theme: {
   //   extend: {
   //     // here's how to extend fonts if needed

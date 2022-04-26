@@ -4,6 +4,8 @@ Simple and opinionated project template for Tauri and Vue 3.
 
 - Vue 3
 - Vite
+  - [AutoImport plugin](https://github.com/antfu/unplugin-auto-import)
+  - `@` configured shortcut path to `./src/`
 - TypeScript
 - Eslint, Prettier
 - Tailwind CSS w/ PostCSS
@@ -21,7 +23,7 @@ pnpm i
 
 ## Usage
 
-#### Running Development Server
+#### Running Tauri + Vite Development Server
 
 ```sh
 pnpm dev

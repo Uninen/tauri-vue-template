@@ -1,18 +1,22 @@
 {
   "name": "tauri-vite-template",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
+    "dev": "vite-tauri dev",
+    "build": "vite-tauri build",
+    "vite:dev": "vite dev",
+    "vite:build": "vite build",
     "test": "vitest",
     "ts-check": "vue-tsc --noEmit",
     "preview": "vite preview"
   },
   "dependencies": {
+    "@tauri-apps/api": "1.0.0-rc.4",
     "vue": "^3.2.25"
   },
   "devDependencies": {
+    "@tauri-apps/cli": "1.0.0-rc.9",
     "@types/node": "^17.0.28",
     "@vitejs/plugin-vue": "^2.3.1",
     "@vue/eslint-config-typescript": "^10.0.0",
@@ -29,6 +33,7 @@
     "typescript": "^4.5.4",
     "unplugin-auto-import": "^0.7.1",
     "vite": "^2.9.5",
+    "vite-plugin-tauri": "^1.1.2",
     "vitest": "^0.10.0",
     "vue-tsc": "^0.34.7"
   }
