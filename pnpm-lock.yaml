@@ -25,10 +25,10 @@ specifiers:
   vue-tsc: ^0.34.7
 
 dependencies:
+  '@tauri-apps/api': 1.0.0-rc.4
   vue: 3.2.33
 
 devDependencies:
-  '@tauri-apps/api': 1.0.0-rc.4
   '@tauri-apps/cli': 1.0.0-rc.9
   '@types/node': 17.0.28
   '@vitejs/plugin-vue': 2.3.1_vite@2.9.6+vue@3.2.33
@@ -127,7 +127,7 @@ packages:
     engines: {node: '>= 12.13.0', npm: '>= 6.6.0', yarn: '>= 1.19.1'}
     dependencies:
       type-fest: 2.12.2
-    dev: true
+    dev: false
 
   /@tauri-apps/cli-darwin-arm64/1.0.0-rc.9:
     resolution: {integrity: sha512-cpcSRyVOh3n5GsCdKtVQpLJ36yx7h+KY868l7KhPnM5EL1cQbFwYzD/VHlzFvfrpS19YvPBB/AHln4rll5iWvw==}
@@ -1909,7 +1909,6 @@ packages:
   /type-fest/2.12.2:
     resolution: {integrity: sha512-qt6ylCGpLjZ7AaODxbpyBZSs9fCI9SkL3Z9q2oxMBQhs/uyY+VD8jHA8ULCGmWQJlBgqvO3EJeAngOHD8zQCrQ==}
     engines: {node: '>=12.20'}
-    dev: true
 
   /typescript/4.6.3:
     resolution: {integrity: sha512-yNIatDa5iaofVozS/uQJEl3JRWLKKGJKh6Yaiv0GLGSuhpFJe7P3SbHZ8/yjAHRQwKRoA6YZqlfjXWmVzoVSMw==}
