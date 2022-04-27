@@ -4,8 +4,8 @@ Simple and opinionated project template for Tauri and Vue 3.
 
 - Vue 3
 - Vite
+  - Hot Module Replacement
   - [AutoImport plugin](https://github.com/antfu/unplugin-auto-import)
-  - `@` configured shortcut path to `./src/`
 - TypeScript
 - Eslint, Prettier
 - Tailwind CSS w/ PostCSS
@@ -43,8 +43,8 @@ pnpm build
 
 ## Roadmap
 
+- [x] Add basic usability features
 - [ ] Build + release with GitHub Actions
-- [ ] Add basic usability features
 - [ ] Add documentation for devtools etc
 
 ## Elsewhere

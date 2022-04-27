@@ -18,10 +18,9 @@ export default defineConfig({
       },
     }),
   ],
-  resolve: {
-    alias: {
-      '@': resolve(__dirname, '/src'),
-    },
+  build: {
+    outDir: './dist',
+    emptyOutDir: true,
   },
   test: {
     include: ['tests/unit/**/*.{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}'],
