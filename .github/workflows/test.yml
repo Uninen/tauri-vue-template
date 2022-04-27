@@ -52,11 +52,11 @@ jobs:
 
   build:
     needs: [test]
-    # if: ${{ github.event.pull_request.merged }}
+    if: ${{ github.event.pull_request.merged }}
     strategy:
       fail-fast: false
       matrix:
-        platform: [ubuntu-latest]
+        platform: [macos-latest, ubuntu-latest, windows-latest]
 
     runs-on: ${{ matrix.platform }}
     steps:
@@ -89,18 +89,11 @@ jobs:
       - name: Install Linux dependencies
         if: matrix.platform == 'ubuntu-latest'
         run: |
-          pwd
           sudo apt-get update
           sudo apt-get install -y libgtk-3-dev webkit2gtk-4.0 libappindicator3-dev librsvg2-dev patchelf libayatana-appindicator3-dev
 
       - name: Build Vite + Tauri
         run: pnpm build
-
-      - name: Debug
-        if: matrix.platform == 'ubuntu-latest'
-        run: |
-          pwd
-          ls -la
 
       - uses: tauri-apps/tauri-action@v0
         env:

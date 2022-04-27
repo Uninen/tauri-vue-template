@@ -43,8 +43,8 @@ pnpm build
 
 ## Roadmap
 
+- [x] Add basic usability features
 - [ ] Build + release with GitHub Actions
-- [ ] Add basic usability features
 - [ ] Add documentation for devtools etc
 
 ## Elsewhere
