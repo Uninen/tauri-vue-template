@@ -4,6 +4,10 @@
     "group:all",
     "schedule:weekly"
   ],
+  "enabledManagers": [
+    "cargo",
+    "npm"
+  ],
   "packageRules": [
     {
       "updateTypes": [
