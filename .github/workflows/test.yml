@@ -80,12 +80,12 @@ jobs:
           node-version: '16'
           cache: 'pnpm'
 
-      - name: install Rust stable
+      - name: Install Rust stable
         uses: actions-rs/toolchain@v1
         with:
           toolchain: stable
 
-      - name: install dependencies (ubuntu only)
+      - name: Install Linux dependencies
         if: matrix.platform == 'ubuntu-latest'
         run: |
           sudo apt-get update
