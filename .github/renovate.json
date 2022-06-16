@@ -19,7 +19,7 @@
       "matchManagers": [
         "npm"
       ],
-      "stabilityDays": 4,
+      "stabilityDays": 2,
       "prCreation": "not-pending"
     }
   ],
