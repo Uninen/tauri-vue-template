@@ -62,12 +62,6 @@ pnpm build
 3. Tag the commit you want to release with `vX.Y.Z`
 4. Github workflow will automatically build a new draft release for this version. Edit the release notes and publish when ready 🎉
 
-## Roadmap
-
-- [x] Add basic usability features
-- [ ] Build + release with GitHub Actions
-- [ ] Add documentation for devtools etc
-
 ## Elsewhere
 
 - [Follow @uninen](https://twitter.com/uninen) on Twitter
