@@ -14,7 +14,7 @@ Simple and opinionated project template for Tauri and Vue 3.
 
 ## Setting Up
 
-1. Install [Tauri Prerequisites](https://tauri.studio/docs/getting-started/prerequisites)
+1. Install [Tauri Prerequisites](https://tauri.studio/v1/guides/getting-started/prerequisites)
 2. Clone and install dependencies (the project is configured for `pnpm`):
 
 ```sh
