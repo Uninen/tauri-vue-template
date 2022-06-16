@@ -6,10 +6,16 @@
 use tauri::api::shell;
 use tauri::{CustomMenuItem, Manager, Menu, MenuEntry, MenuItem, Submenu};
 
+#[tauri::command]
+fn backend_add(number: i32) -> i32 {
+    println!("Backend was called with an argument: {}", number);
+    return number + 2;
+}
+
 fn main() {
     let ctx = tauri::generate_context!();
     tauri::Builder::default()
-        .invoke_handler(tauri::generate_handler![])
+        .invoke_handler(tauri::generate_handler![backend_add])
         .menu(Menu::with_items([
             #[cfg(target_os = "macos")]
             MenuEntry::Submenu(Submenu::new(
