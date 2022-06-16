@@ -1,10 +1,10 @@
 name: Build and release
 
 on:
-  workflow_run:
-    workflows: ['Test']
-    types:
-      - completed
+  # workflow_run:
+  #   workflows: ['test']
+  #   types:
+  #     - completed
   # # push:
   # #   branches:
   # #     - main
@@ -14,14 +14,14 @@ on:
   # #     - 'tests/**'
   # #     - 'pnpm-lock.yaml'
   # #     - '.github/workflows/test.yml'
-  # pull_request:
-  #   paths:
-  #     - 'src/**'
-  #     - 'src-tauri/**'
-  #     - 'tests/**'
-  #     - 'pnpm-lock.yaml'
-  #     - '.github/workflows/test.yml'
-  #     - '.github/workflows/build_and_release.yml'
+  pull_request:
+    paths:
+      - 'src/**'
+      - 'src-tauri/**'
+      - 'tests/**'
+      - 'pnpm-lock.yaml'
+      - '.github/workflows/test.yml'
+      - '.github/workflows/build_and_release.yml'
 
 concurrency:
   group: release-${{ github.ref }}
