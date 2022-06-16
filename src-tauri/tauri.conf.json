@@ -1,7 +1,7 @@
 {
   "package": {
-    "productName": "tauri-vite-template",
-    "version": "0.0.1"
+    "productName": "tauri-vue-template",
+    "version": "0.1.0"
   },
   "build": {
     "distDir": "../dist",
@@ -51,7 +51,7 @@
     },
     "windows": [
       {
-        "title": "tauri-vite-template",
+        "title": "tauri-vue-template",
         "width": 800,
         "height": 600,
         "resizable": true,

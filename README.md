@@ -23,6 +23,8 @@ pnpm i
 
 ## Usage
 
+### Development
+
 #### Running Tauri + Vite Development Server
 
 ```sh
@@ -35,17 +37,30 @@ pnpm dev
 pnpm test
 ```
 
+#### Upgrading Rust Dependencies
+
+You can upgrade your Rust dependencies with the included [cargo-edit](https://github.com/killercup/cargo-edit) tool. In `src-tauri/` say
+
+```sh
+cargo upgrade
+```
+
+### Building and releasing
+
 #### Building
+
+The project has GitHub Actions set up which will automatically test and build your app with every push and PR. For building manually:
 
 ```sh
 pnpm build
 ```
 
-## Roadmap
+#### Releasing a new version
 
-- [x] Add basic usability features
-- [ ] Build + release with GitHub Actions
-- [ ] Add documentation for devtools etc
+1. Bump version number (In `package.json`, and `src-tauri/`)
+2. Run `pnpm check` to update `Cargo.lock`
+3. Tag the commit you want to release with `vX.Y.Z`
+4. Github workflow will automatically build a new draft release for this version. Edit the release notes and publish when ready 🎉
 
 ## Elsewhere
 
