@@ -1,11 +1,11 @@
 [package]
-name = "app"
+name = "tauri_vue_template"
 version = "0.1.0"
 description = "A Tauri App"
 authors = ["Ville Säävuori"]
 license = "MIT"
 repository = "https://github.com/Uninen/tauri-vue-template"
-default-run = "app"
+default-run = "tauri_vue_template"
 edition = "2021"
 rust-version = "1.57"
 

@@ -1,5 +1,10 @@
 # Changelog
 
+## Unreleased
+
+- Fix: changed app name (`packageName` in `src-tauri/tauri.conf.json`).
+- Chore: tweaked Vite config for better dev experience.
+
 ## 0.1.0 (2022-06-16)
 
 Hello Tauri 1.0!

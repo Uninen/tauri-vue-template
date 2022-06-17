@@ -1,6 +1,6 @@
 {
   "package": {
-    "productName": "tauri-vue-template",
+    "productName": "Tauri Vue Template",
     "version": "0.1.0"
   },
   "build": {
@@ -51,7 +51,7 @@
     },
     "windows": [
       {
-        "title": "tauri-vue-template",
+        "title": "Tauri Vue Template",
         "width": 800,
         "height": 600,
         "resizable": true,

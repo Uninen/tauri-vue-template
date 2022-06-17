@@ -1,8 +1,8 @@
 /// <reference types="vitest" />
-import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
-import AutoImport from 'unplugin-auto-import/vite'
 import { resolve } from 'path'
+import AutoImport from 'unplugin-auto-import/vite'
+import { defineConfig } from 'vite'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -20,6 +20,9 @@ export default defineConfig({
   ],
   build: {
     outDir: './dist',
+    target: ['es2021', 'chrome97', 'safari13'],
+    minify: !process.env.TAURI_DEBUG,
+    sourcemap: !!process.env.TAURI_DEBUG,
     emptyOutDir: true,
   },
   test: {
