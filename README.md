@@ -23,7 +23,7 @@ pnpm i
 
 ## Usage
 
-### Frontend (Node / pnpm)
+### Frontend (Node / PnPM)
 
 #### Running Tauri + Vite Development Server
 
@@ -37,7 +37,7 @@ pnpm dev
 pnpm test
 ```
 
-### Backend (Rust)
+### Backend (Rust / Cargo)
 
 Backend code lives in `src-tauri/`. (Following commands are to be run in there.)
 
