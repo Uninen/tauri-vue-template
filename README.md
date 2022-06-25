@@ -15,7 +15,7 @@ Simple and opinionated project template for Tauri and Vue 3.
 ## Setting Up
 
 1. Install [Tauri Prerequisites](https://tauri.studio/v1/guides/getting-started/prerequisites)
-2. Clone and install dependencies (the project is configured for `pnpm`):
+2. Clone and install frontend dependencies (this template uses `pnpm` by default but you can use whatever package manager you like):
 
 ```sh
 pnpm i
@@ -23,9 +23,13 @@ pnpm i
 
 ## Usage
 
-### Frontend (Node / PnPM)
+The app is has two parts (see [Tauri Process Model docs](https://tauri.app/v1/guides/architecture/process-model)); the Core Process (`backend`, or _main_ process in Electron terminology) and the WebView process (`frontend`, or _renderer_ in Electron terminology).
+
+### Frontend / WebView (Node, PnPM)
 
 #### Running Tauri + Vite Development Server
+
+Dev command uses [vite-plugin-tauri](https://github.com/amrbashir/vite-plugin-tauri) to run both backend and frontend simultaneously:
 
 ```sh
 pnpm dev
@@ -37,7 +41,7 @@ pnpm dev
 pnpm test
 ```
 
-### Backend (Rust / Cargo)
+### Backend / Core (Rust, Cargo)
 
 Backend code lives in `src-tauri/`. (Following commands are to be run in there.)
 
