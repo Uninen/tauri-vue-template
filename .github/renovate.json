@@ -17,6 +17,13 @@
     },
     {
       "matchManagers": [
+        "cargo"
+      ],
+      "stabilityDays": 2,
+      "prCreation": "not-pending"
+    },
+    {
+      "matchManagers": [
         "npm"
       ],
       "stabilityDays": 2,
