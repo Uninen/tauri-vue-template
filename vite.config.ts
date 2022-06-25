@@ -6,7 +6,6 @@ import { defineConfig } from 'vite'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  clearScreen: false,
   plugins: [
     vue(),
     AutoImport({
@@ -18,6 +17,12 @@ export default defineConfig({
       },
     }),
   ],
+  clearScreen: false,
+  envPrefix: ['VITE_', 'TAURI_'],
+  server: {
+    port: 3000,
+    strictPort: true,
+  },
   build: {
     outDir: './dist',
     target: ['es2021', 'chrome97', 'safari13'],
