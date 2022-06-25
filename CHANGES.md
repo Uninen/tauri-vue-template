@@ -3,7 +3,11 @@
 ## Unreleased
 
 - Fix: changed app name (`packageName` in `src-tauri/tauri.conf.json`).
+- Fix: made Vite config more robust.
+- Tooling: added `.vscode` and recommendation fot Volar extension.
 - Chore: tweaked Vite config for better dev experience.
+- Chore: bumped deps.
+- Docs: better README.
 
 ## 0.1.0 (2022-06-16)
 
