@@ -23,7 +23,7 @@ pnpm i
 
 ## Usage
 
-### Development
+### Frontend (Node / pnpm)
 
 #### Running Tauri + Vite Development Server
 
@@ -37,9 +37,21 @@ pnpm dev
 pnpm test
 ```
 
+### Backend (Rust)
+
+Backend code lives in `src-tauri/`. (Following commands are to be run in there.)
+
+#### Finding Outdated Rust Dependencies
+
+If you have [cargo-outdated](https://github.com/kbknapp/cargo-outdated) installed:
+
+```sh
+cargo outdated
+```
+
 #### Upgrading Rust Dependencies
 
-You can upgrade your Rust dependencies with the included [cargo-edit](https://github.com/killercup/cargo-edit) tool. In `src-tauri/` say
+If you have [cargo-edit](https://github.com/killercup/cargo-edit) installed:
 
 ```sh
 cargo upgrade
