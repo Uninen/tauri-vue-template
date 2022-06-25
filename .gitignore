@@ -23,7 +23,7 @@ dist-ssr
 *.sln
 *.sw?
 
-.vscode
+.vscode/settings.json
 src-tauri/target
 
 .env
