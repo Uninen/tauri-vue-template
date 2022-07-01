@@ -5,6 +5,7 @@
 - Fix: changed app name (`packageName` in `src-tauri/tauri.conf.json`).
 - Fix: made Vite config more robust.
 - Tooling: added `.vscode` and recommendation fot Volar extension.
+- Refactor: removed `vite-plugin-tauri` from frontend deps.
 - Chore: tweaked Vite config for better dev experience.
 - Chore: bumped deps.
 - Docs: better README.

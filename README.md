@@ -61,6 +61,10 @@ If you have [cargo-edit](https://github.com/killercup/cargo-edit) installed:
 cargo upgrade
 ```
 
+### Debugging
+
+- You can get Rust to output a backtrace by running with `RUST_BACKTRACE=1` environment variable
+
 ### Building and releasing
 
 #### Building
