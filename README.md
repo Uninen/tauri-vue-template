@@ -29,7 +29,7 @@ The app is has two parts (see [Tauri Process Model docs](https://tauri.app/v1/gu
 
 #### Running Tauri + Vite Development Server
 
-Dev command uses [vite-plugin-tauri](https://github.com/amrbashir/vite-plugin-tauri) to run both backend and frontend simultaneously:
+Both backend and frontend start simultaneously:
 
 ```sh
 pnpm dev
