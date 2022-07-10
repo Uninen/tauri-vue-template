@@ -1,6 +1,6 @@
 # Changelog
 
-## Unreleased
+## 0.2.0 (2022-07-10)
 
 - Fix: changed app name (`packageName` in `src-tauri/tauri.conf.json`).
 - Fix: made Vite config more robust.
