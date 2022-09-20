@@ -28,3 +28,4 @@ src-tauri/target
 
 .env
 LOCAL_NOTES.md
+.gitpod.yml
