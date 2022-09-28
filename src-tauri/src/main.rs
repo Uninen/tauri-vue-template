@@ -38,9 +38,12 @@ fn main() {
                 _ => {}
             }
         })
-        .setup(|app| {
-            let main_window = app.get_window("main").unwrap();
-            main_window.open_devtools();
+        .setup(|_app| {
+            #[cfg(debug_assertions)]
+            {
+                let main_window = _app.get_window("main").unwrap();
+                main_window.open_devtools();
+            }
             Ok(())
         })
         .run(ctx)
