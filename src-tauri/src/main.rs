@@ -9,7 +9,7 @@ use tauri::{CustomMenuItem, Manager, Menu, Submenu};
 #[tauri::command]
 fn backend_add(number: i32) -> i32 {
     println!("Backend was called with an argument: {}", number);
-    return number + 2;
+    number + 2
 }
 
 fn main() {
