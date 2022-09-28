@@ -7,11 +7,9 @@ Simple project template for Tauri and Vue 3.
 ## Features
 
 - Vue 3 / TypeScript frontend
-
   - [ESLint](https://eslint.org/) + [Prettier](https://prettier.io/) configured
   - [Vue-devtools](https://devtools.vuejs.org/) installed
   - [Tailwind CSS](https://tailwindcss.com/) w/ PostCSS configured
-
 - Simple and fast [Vite](https://vitejs.dev/) config w/ HMR in development and optimizations for production builds
   - [AutoImport plugin](https://github.com/antfu/unplugin-auto-import)
 - [Vitest](https://vitest.dev/) for unit tests
