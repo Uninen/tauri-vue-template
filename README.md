@@ -3,6 +3,7 @@
 Simple and opinionated project template for Tauri and Vue 3.
 
 - Vue 3
+  - Devtools integrated
 - Vite
   - Hot Module Replacement
   - [AutoImport plugin](https://github.com/antfu/unplugin-auto-import)
@@ -11,6 +12,7 @@ Simple and opinionated project template for Tauri and Vue 3.
 - Tailwind CSS w/ PostCSS
 - Vitest for unit tests
 - Github Actions
+- Debugging configuration set up for VS Code
 
 ## Setting Up
 
@@ -25,7 +27,7 @@ pnpm i
 
 The app is has two parts (see [Tauri Process Model docs](https://tauri.app/v1/guides/architecture/process-model)); the Core Process (`backend`, or _main_ process in Electron terminology) and the WebView process (`frontend`, or _renderer_ in Electron terminology).
 
-### Frontend / WebView (Node, PnPM)
+### Frontend / WebView (TS, PnPM)
 
 #### Running Tauri + Vite Development Server
 
@@ -63,7 +65,8 @@ cargo upgrade
 
 ### Debugging
 
-- You can get Rust to output a backtrace by running with `RUST_BACKTRACE=1` environment variable
+- You can get Rust to output a backtrace by running with `RUST_BACKTRACE=1` environment variable.
+- If you use VS Code, you can debug Rust code with the included `Debug Tauri` config.
 
 ### Building and releasing
 
