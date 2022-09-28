@@ -7,7 +7,8 @@
 - Feat: open browser devtools automatically on start.
 - Feat: changed app icon to Vue icon.
 - Fix: added empty dist folder to make Rust extension happy.
-- Fix: fixed Vite build taarget to match tauri create app config.
+- Fix: fixed Vite build target to match tauri create app config.
+- UI: smarter styles and markup.
 - Docs: documented howto implement Electron-like `titleBarStyle: 'hidden'` window, and that the sync backend commands block the UI.
 - Chore: bumped deps.
 

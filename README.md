@@ -1,17 +1,21 @@
-# Tauri + Vue + Vite template
+# Tauri + Vue + Vite Template
 
-Simple and opinionated project template for Tauri and Vue 3.
+![Screenshot](./public/screenshot.png)
 
-- Vue 3
-  - Devtools integrated
-- Vite
-  - Hot Module Replacement
+Simple project template for Tauri and Vue 3.
+
+## Features
+
+- Vue 3 / TypeScript frontend
+
+  - [ESLint](https://eslint.org/) + [Prettier](https://prettier.io/) configured
+  - [Vue-devtools](https://devtools.vuejs.org/) installed
+  - [Tailwind CSS](https://tailwindcss.com/) w/ PostCSS configured
+
+- Simple and fast [Vite](https://vitejs.dev/) config w/ HMR in development and optimizations for production builds
   - [AutoImport plugin](https://github.com/antfu/unplugin-auto-import)
-- TypeScript
-- Eslint, Prettier
-- Tailwind CSS w/ PostCSS
-- Vitest for unit tests
-- Github Actions
+- [Vitest](https://vitest.dev/) for unit tests
+- Github Actions for testing and building
 - Debugging configuration set up for VS Code
 
 ## Setting Up
