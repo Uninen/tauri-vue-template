@@ -6,6 +6,7 @@
 - Feat: added debug config for VSCode. Thanks @gabriel-andreescu for the contribution!
 - Fix: fixed Vite build taarget to match tauri create app config.
 - Fix: added empty dist folder to make Rust extension happy.
+- Docs: documented howto implement Electron-like `titleBarStyle: 'hidden'` window, and that the sync backend commands block the UI.
 - Chore: bumped deps.
 
 ## 0.2.0 (2022-07-10)
