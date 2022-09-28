@@ -4,6 +4,7 @@
 
 - Feat: added vue-devtools integration.
 - Feat: added debug config for VSCode. Thanks @gabriel-andreescu for the contribution!
+- Fix: added empty dist folder to make Rust extension happy.
 - Chore: bumped deps.
 
 ## 0.2.0 (2022-07-10)

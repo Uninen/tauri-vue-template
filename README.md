@@ -80,15 +80,16 @@ pnpm build
 
 #### Releasing a new version
 
-1. Bump version number (In `package.json`, and `src-tauri/`)
+1. Bump version number (In `package.json`, and `src-tauri/tauri.conf.json`)
 2. Run `pnpm check` to update `Cargo.lock`
 3. Tag the commit you want to release with `vX.Y.Z`
-4. Github workflow will automatically build a new draft release for this version. Edit the release notes and publish when ready 🎉
+4. Edit the release notes and push (also tags!)
+5. Github workflow will automatically build a new draft release for this version. Publish when ready 🎉
 
 ## Elsewhere
 
 - [Follow @uninen](https://twitter.com/uninen) on Twitter
-- Read my continuously updating learnings from Vite / Vue / TypeScript and other Web development topics from my [Today I Learned site](https://til.unessa.net/)
+- Read my continuously updating learnings around Tauri / Vue / TypeScript and other Web development topics from my [Today I Learned site](https://til.unessa.net/)
 
 ## Contributing
 

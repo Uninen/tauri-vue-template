@@ -27,7 +27,7 @@ export default defineConfig({
     outDir: './dist',
     target: ['es2021', 'chrome97', 'safari13'],
     minify: !!!process.env.TAURI_DEBUG,
-    sourcemap: !!!process.env.TAURI_DEBUG,
+    sourcemap: !!process.env.TAURI_DEBUG,
     emptyOutDir: true,
   },
   test: {
