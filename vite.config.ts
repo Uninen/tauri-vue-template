@@ -25,7 +25,8 @@ export default defineConfig({
   },
   build: {
     outDir: './dist',
-    target: ['es2021', 'chrome97', 'safari13'],
+    // See https://tauri.app/v1/references/webview-versions for details
+    target: ['es2021', 'chrome100', 'safari13'],
     minify: !!!process.env.TAURI_DEBUG,
     sourcemap: !!process.env.TAURI_DEBUG,
     emptyOutDir: true,

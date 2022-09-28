@@ -86,6 +86,18 @@ pnpm build
 4. Edit the release notes and push (also tags!)
 5. Github workflow will automatically build a new draft release for this version. Publish when ready 🎉
 
+## Howto
+
+### Custom title bar styles (like `titleBarStyle: 'hidden'` in Electron)
+
+Tauri doesn't currently offer a method to hide the title bar without hiding all window chrome. There is, however, a fairly simple way to do it manually (with certain limitations; see [Tauri issue #2663](https://github.com/tauri-apps/tauri/issues/2663) for details).
+
+1. Add `cocoa` and `objc` crates to dependencies
+2. Add `set_transparent_titlebar` and `position_traffic_lights` from this gist: https://gist.github.com/Uninen/5377381eb81bdcd71b9d1859e46e3e29
+3. Call `set_transparent_titlebar` and `position_traffic_lights` from `setup` and `on_window_event` (example in the gist starting line 114) on any window you want affected.
+
+This implementation works but results in visible jerkyness of the traffic lights (on macOS) when the window is resized. (Alternatives discussed in detail in the issue #2663)
+
 ## Elsewhere
 
 - [Follow @uninen](https://twitter.com/uninen) on Twitter
