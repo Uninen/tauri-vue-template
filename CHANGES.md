@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- Feat: added debug config for VSCode. Thanks @gabriel-andreescu for the contribution!
 - Chore: bumped deps.
 
 ## 0.2.0 (2022-07-10)
@@ -19,7 +20,7 @@
 Hello Tauri 1.0!
 
 - Feat: Added a separate release workflow.
-- Refactor: converted menu to use `Menu::os_default`. Thank You to @JonasKruckenberg! for the tip!
+- Refactor: converted menu to use `Menu::os_default`. Thank You to @JonasKruckenberg for the tip!
 - Docs: added more docs on usage, fixed prerequisites link.
 - Chore: Bumped all Vite + Tauri deps.
 
