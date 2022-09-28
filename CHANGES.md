@@ -2,10 +2,11 @@
 
 ## Unreleased
 
-- Feat: added vue-devtools integration.
 - Feat: added debug config for VSCode. Thanks @gabriel-andreescu for the contribution!
-- Fix: fixed Vite build taarget to match tauri create app config.
+- Feat: added vue-devtools integration.
+- Feat: open browser devtools automatically on start.
 - Fix: added empty dist folder to make Rust extension happy.
+- Fix: fixed Vite build taarget to match tauri create app config.
 - Docs: documented howto implement Electron-like `titleBarStyle: 'hidden'` window, and that the sync backend commands block the UI.
 - Chore: bumped deps.
 
