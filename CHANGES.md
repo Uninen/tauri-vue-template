@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- Feat: added vue-devtools integration.
 - Feat: added debug config for VSCode. Thanks @gabriel-andreescu for the contribution!
 - Chore: bumped deps.
 
