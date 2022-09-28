@@ -20,14 +20,14 @@ export default defineConfig({
   clearScreen: false,
   envPrefix: ['VITE_', 'TAURI_'],
   server: {
-    port: 3000,
+    port: 5173,
     strictPort: true,
   },
   build: {
     outDir: './dist',
     target: ['es2021', 'chrome97', 'safari13'],
-    minify: !process.env.TAURI_DEBUG,
-    sourcemap: !!process.env.TAURI_DEBUG,
+    minify: !!!process.env.TAURI_DEBUG,
+    sourcemap: !!!process.env.TAURI_DEBUG,
     emptyOutDir: true,
   },
   test: {
