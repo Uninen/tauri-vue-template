@@ -5,19 +5,12 @@ import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <template>
-  <div class="flex flex-col">
-    <img alt="Vue logo" src="./assets/logo.png" class="w-20 h-20 mx-auto" />
-    <HelloWorld msg="Hello Vue 3 + TypeScript + Vite" />
+  <div class="flex flex-col p-2">
+    <div class="flex flex-row items-center justify-center">
+      <img src="/tauri.svg" class="w-20 h-20 logo tauri" alt="Tauri logo" />
+      <img src="/vue.svg" class="w-20 h-20 logo vue" alt="Vue logo" />
+    </div>
+
+    <HelloWorld msg="Hello Tauri + Vue!" />
   </div>
 </template>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
