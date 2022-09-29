@@ -19,7 +19,7 @@ Simple project template for Tauri and Vue 3.
 ## Setting Up
 
 1. Install [Tauri Prerequisites](https://tauri.studio/v1/guides/getting-started/prerequisites)
-2. Clone and install frontend dependencies (this template uses `pnpm` by default but you can use whatever package manager you like):
+2. Clone and install dependencies (this template uses `pnpm` by default):
 
 ```sh
 pnpm i
@@ -27,13 +27,16 @@ pnpm i
 
 ## Usage
 
-The app is has two parts (see [Tauri Process Model docs](https://tauri.app/v1/guides/architecture/process-model)); the Core Process (`backend`, or _main_ process in Electron terminology) and the WebView process (`frontend`, or _renderer_ in Electron terminology).
+A Tauri app has at least [two processes](https://tauri.app/v1/guides/architecture/process-model):
 
-### Frontend / WebView (TS, PnPM)
+- the Core Process (`backend`, or _main_ process in Electron terminology), and
+- the WebView process (`frontend`, or _renderer_ in Electron)
 
-#### Running Tauri + Vite Development Server
+### 🦢 Frontend (TS, PnPM)
 
-Both backend and frontend start simultaneously:
+#### Running Development Server
+
+Both back- and frontend start with a single command:
 
 ```sh
 pnpm dev
@@ -45,9 +48,9 @@ pnpm dev
 pnpm test
 ```
 
-### Backend / Core (Rust, Cargo)
+### 🦀 Backend (Rust, Cargo)
 
-Backend code lives in `src-tauri/`. (Following commands are to be run in there.)
+Backend code lives in `src-tauri/` (Following commands are to be run from there.)
 
 #### Finding Outdated Rust Dependencies
 
@@ -67,7 +70,7 @@ cargo upgrade
 
 ### Debugging
 
-- You can get Rust to output a backtrace by running with `RUST_BACKTRACE=1` environment variable.
+- The `dev` command has by default `RUST_BACKTRACE=1` set which makes Rust output full backtraces to the console. (Simply remove it from the package.json command if you want it).
 - If you use VS Code, you can debug Rust code with the included `Debug Tauri` config.
 
 ### Building and releasing

@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.2.0",
   "scripts": {
-    "dev": "concurrently -k \"tauri dev\" \"pnpm devtools\"",
+    "dev": "RUST_BACKTRACE=1 concurrently -k \"tauri dev\" \"pnpm devtools\"",
     "build": "tauri build",
     "vite:dev": "vite dev",
     "vite:build": "vite build",
@@ -21,7 +21,7 @@
     "@tauri-apps/cli": "1.1.1",
     "@types/node": "18.7.23",
     "@vitejs/plugin-vue": "3.1.0",
-    "@vue/devtools": "6.2.1",
+    "@vue/devtools": "6.4.2",
     "@vue/eslint-config-typescript": "11.0.2",
     "autoprefixer": "10.4.12",
     "concurrently": "7.4.0",

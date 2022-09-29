@@ -1,11 +1,12 @@
 # Changelog
 
-## Unreleased
+## 0.3.0 (2022-09-29)
 
 - Feat: added debug config for VSCode. Thanks @gabriel-andreescu for the contribution!
 - Feat: added vue-devtools integration.
 - Feat: open browser devtools automatically on start.
 - Feat: changed app icon to Vue icon.
+- Feat: added `RUST_BACKTRACE=1` to the default dev command.
 - Fix: added empty dist folder to make Rust extension happy.
 - Fix: fixed Vite build target to match tauri create app config.
 - UI: smarter styles and markup.
