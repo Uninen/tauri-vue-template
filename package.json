@@ -14,30 +14,30 @@
     "check": "cd src-tauri && cargo check"
   },
   "dependencies": {
-    "@tauri-apps/api": "1.1.0",
-    "vue": "3.2.40"
+    "@tauri-apps/api": "1.2.0",
+    "vue": "3.2.45"
   },
   "devDependencies": {
-    "@tauri-apps/cli": "1.1.1",
-    "@types/node": "18.7.23",
-    "@vitejs/plugin-vue": "3.1.0",
-    "@vue/devtools": "6.4.2",
+    "@tauri-apps/cli": "1.2.2",
+    "@types/node": "18.11.18",
+    "@vitejs/plugin-vue": "4.0.0",
+    "@vue/devtools": "6.4.5",
     "@vue/eslint-config-typescript": "11.0.2",
-    "autoprefixer": "10.4.12",
-    "concurrently": "7.4.0",
-    "eslint": "8.24.0",
-    "eslint-config-prettier": "8.5.0",
+    "autoprefixer": "10.4.13",
+    "concurrently": "7.6.0",
+    "eslint": "8.31.0",
+    "eslint-config-prettier": "8.6.0",
     "eslint-plugin-node": "11.1.0",
     "eslint-plugin-security": "1.5.0",
-    "eslint-plugin-vue": "9.5.1",
-    "postcss": "8.4.16",
-    "postcss-import": "15.0.0",
+    "eslint-plugin-vue": "9.8.0",
+    "postcss": "8.4.20",
+    "postcss-import": "15.1.0",
     "postcss-nesting": "10.2.0",
-    "tailwindcss": "3.1.8",
-    "typescript": "4.8.4",
-    "unplugin-auto-import": "0.11.2",
-    "vite": "3.1.4",
-    "vitest": "0.23.4",
-    "vue-tsc": "0.40.13"
+    "tailwindcss": "3.2.4",
+    "typescript": "4.9.4",
+    "unplugin-auto-import": "0.12.1",
+    "vite": "4.0.4",
+    "vitest": "0.26.3",
+    "vue-tsc": "1.0.22"
   }
 }
