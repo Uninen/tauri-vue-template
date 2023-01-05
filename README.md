@@ -70,7 +70,7 @@ cargo upgrade
 
 ### Debugging
 
-- The `dev` command has by default `RUST_BACKTRACE=1` set which makes Rust output full backtraces to the console. (Simply remove it from the package.json command if you want it).
+- The `dev` command has by default `RUST_BACKTRACE=1` set which makes Rust output full backtraces to the console. (Remove it from the `package.json` command if you don't want it).
 - If you use VS Code, you can debug Rust code with the included `Debug Tauri` config.
 
 ### Building and releasing
