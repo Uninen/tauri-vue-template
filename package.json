@@ -3,7 +3,8 @@
   "private": true,
   "version": "0.3.0",
   "scripts": {
-    "dev": "RUST_BACKTRACE=1 concurrently -k \"tauri dev\" \"pnpm devtools\"",
+    "dev": "set RUST_BACKTRACE=1; && concurrently -k \"tauri dev\" \"pnpm devtools\"",
+    "tauri:dev":"tauri dev",
     "build": "tauri build",
     "vite:dev": "vite dev",
     "vite:build": "vite build",
