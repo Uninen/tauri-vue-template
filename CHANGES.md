@@ -2,8 +2,10 @@
 
 ## 0.4.0 (TBA)
 
+- Fix: use `cross-env` to setting env for Windows compatibility.
+- Chore: aligned project settings to better match the official Tauri starter.
 - Chore: bumped all front deps.
-- Chore: bumped GitHub workflow version.
+- Chore: bumped all GitHub workflow action versions.
 
 ## 0.3.0 (2022-09-29)
 
