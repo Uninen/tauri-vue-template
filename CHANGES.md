@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.4.0 (TBA)
+
+- Chore: bumped all front deps.
+- Chore: bumped GitHub workflow version.
+
 ## 0.3.0 (2022-09-29)
 
 - Feat: added debug config for VSCode. Thanks @gabriel-andreescu for the contribution!
