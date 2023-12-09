@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.4.0 (2023-12-09)
+
+- Feat: enabled automerge for Renovate Bot.
+- Fix: use `cross-env` to setting env for Windows compatibility.
+- Chore: aligned project settings to better match the official Tauri starter.
+- Chore: bumped all front deps.
+- Chore: bumped all GitHub workflow action versions.
+
 ## 0.3.0 (2022-09-29)
 
 - Feat: added debug config for VSCode. Thanks @gabriel-andreescu for the contribution!
