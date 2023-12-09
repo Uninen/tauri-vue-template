@@ -2,10 +2,12 @@
   "extends": [
     "config:base",
     "group:all",
-    "schedule:weekly"
+    "schedule:weekly",
+    ":widenPeerDependencies"
   ],
   "enabledManagers": [
     "cargo",
+    "github-actions",
     "npm"
   ],
   "packageRules": [
@@ -19,15 +21,15 @@
       "matchManagers": [
         "cargo"
       ],
-      "stabilityDays": 2,
-      "prCreation": "not-pending"
+      "automerge": true,
+      "stabilityDays": 2
     },
     {
       "matchManagers": [
         "npm"
       ],
-      "stabilityDays": 2,
-      "prCreation": "not-pending"
+      "automerge": true,
+      "stabilityDays": 2
     }
   ],
   "timezone": "Europe/Helsinki",
