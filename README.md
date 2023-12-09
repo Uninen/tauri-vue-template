@@ -85,7 +85,7 @@ pnpm build
 
 #### Releasing a new version
 
-1. Bump version number (In `package.json`, and `src-tauri/tauri.conf.json`)
+1. Bump version number in `package.json`, `src-tauri/Cargo.toml`, and `src-tauri/tauri.conf.json`. ([This could be easier!](https://github.com/Uninen/tauri-vue-template/issues/18))
 2. Run `pnpm check` to update `Cargo.lock`
 3. Tag the commit you want to release with `vX.Y.Z`
 4. Edit the release notes and push (also tags!)

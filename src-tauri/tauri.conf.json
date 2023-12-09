@@ -1,11 +1,11 @@
 {
   "package": {
     "productName": "Tauri Vue Template",
-    "version": "0.3.0"
+    "version": "0.4.0"
   },
   "build": {
     "distDir": "../dist",
-    "devPath": "http://localhost:5173",
+    "devPath": "http://localhost:1420",
     "beforeDevCommand": "pnpm vite:dev",
     "beforeBuildCommand": "pnpm vite:build"
   },
