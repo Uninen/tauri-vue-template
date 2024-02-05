@@ -31,7 +31,7 @@
     "eslint-config-prettier": "9.1.0",
     "eslint-plugin-node": "11.1.0",
     "eslint-plugin-security": "2.1.0",
-    "eslint-plugin-vue": "9.20.1",
+    "eslint-plugin-vue": "9.21.1",
     "postcss": "8.4.32",
     "postcss-import": "16.0.0",
     "postcss-nesting": "12.0.1",
