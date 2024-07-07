@@ -15,11 +15,11 @@
     "check": "cd src-tauri && cargo check"
   },
   "dependencies": {
-    "@tauri-apps/api": "1.5.4",
+    "@tauri-apps/api": "1.6.0",
     "vue": "3.4.26"
   },
   "devDependencies": {
-    "@tauri-apps/cli": "1.5.12",
+    "@tauri-apps/cli": "1.6.0",
     "@types/node": "20.14.2",
     "@vitejs/plugin-vue": "5.0.4",
     "@vue/devtools": "7.3.3",
@@ -31,7 +31,7 @@
     "eslint-config-prettier": "9.1.0",
     "eslint-plugin-n": "17.9.0",
     "eslint-plugin-security": "3.0.0",
-    "eslint-plugin-vue": "9.26.0",
+    "eslint-plugin-vue": "9.27.0",
     "postcss": "8.4.38",
     "postcss-import": "16.1.0",
     "postcss-nesting": "12.1.2",
