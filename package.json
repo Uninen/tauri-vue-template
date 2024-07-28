@@ -21,7 +21,7 @@
   "devDependencies": {
     "@tauri-apps/cli": "1.6.0",
     "@types/node": "20.14.2",
-    "@vitejs/plugin-vue": "5.0.4",
+    "@vitejs/plugin-vue": "5.1.0",
     "@vue/devtools": "7.3.3",
     "@vue/eslint-config-typescript": "13.0.0",
     "autoprefixer": "10.4.19",
@@ -29,7 +29,7 @@
     "cross-env": "7.0.3",
     "eslint": "^9.0.0",
     "eslint-config-prettier": "9.1.0",
-    "eslint-plugin-n": "17.9.0",
+    "eslint-plugin-n": "17.10.1",
     "eslint-plugin-security": "3.0.0",
     "eslint-plugin-vue": "9.27.0",
     "postcss": "8.4.38",
