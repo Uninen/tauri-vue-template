@@ -20,7 +20,7 @@
   },
   "devDependencies": {
     "@tauri-apps/cli": "1.6.0",
-    "@types/node": "20.15.0",
+    "@types/node": "20.16.1",
     "@vitejs/plugin-vue": "5.1.0",
     "@vue/devtools": "7.3.3",
     "@vue/eslint-config-typescript": "13.0.0",
