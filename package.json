@@ -11,7 +11,7 @@
     "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview",
     "type-check": "vue-tsc --build --force",
-    "tauri": "cross-env RUST_BACKTRACE=1 tauri",
+    "tauri": "tauri",
     "bump": "node bump-version.cjs",
     "check": "cargo check --manifest-path src-tauri/Cargo.toml"
   },
