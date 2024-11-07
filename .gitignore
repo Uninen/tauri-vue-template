@@ -8,13 +8,13 @@ pnpm-debug.log*
 lerna-debug.log*
 
 node_modules
-dist/**
-!dist/keep
+dist
 dist-ssr
 *.local
 
 # Editor directories and files
-.vscode/settings.json
+.vscode/*
+!.vscode/extensions.json
 .idea
 .DS_Store
 *.suo
@@ -22,10 +22,4 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
-
-.vscode/settings.json
-src-tauri/target
-
-.env
-LOCAL_NOTES.md
-.gitpod.yml
+*.tsbuildinfo

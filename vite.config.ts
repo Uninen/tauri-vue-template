@@ -1,38 +1,70 @@
 import vue from '@vitejs/plugin-vue'
-import { resolve } from 'path'
+import { fileURLToPath, URL } from 'node:url'
 import AutoImport from 'unplugin-auto-import/vite'
-import { defineConfig } from 'vitest/config'
+import Components from 'unplugin-vue-components/vite'
+import { defineConfig } from 'vite'
+import vueDevTools from 'vite-plugin-vue-devtools'
+import { version as pkgVersion } from './package.json'
 
-// See https://vitejs.dev/config/
+const HOST = process.env.TAURI_DEV_HOST
+const PLATFORM = process.env.TAURI_PLATFORM
+process.env.VITE_APP_VERSION = pkgVersion
+if (process.env.NODE_ENV === 'production') {
+  process.env.VITE_APP_BUILD_EPOCH = new Date().getTime().toString()
+}
+
+// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
     vue(),
-    // See https://github.com/unplugin/unplugin-auto-import
+    vueDevTools(),
     AutoImport({
-      imports: ['vue'],
-      dts: './src/auto-imports.d.ts',
-      eslintrc: {
-        enabled: true,
-        filepath: resolve(__dirname, '.eslintrc-auto-import.json'),
-      },
+      imports: [
+        'vue',
+        'vue-router',
+        'pinia',
+        {
+          '@/store': ['useStore'],
+        },
+      ],
+      dts: 'auto-imports.d.ts',
+      vueTemplate: true,
+    }),
+    Components({
+      dts: 'components.d.ts',
     }),
   ],
+  resolve: {
+    alias: {
+      '@': fileURLToPath(new URL('./src', import.meta.url)),
+    },
+  },
+  css: {
+    preprocessorMaxWorkers: true,
+  },
+
   clearScreen: false,
   envPrefix: ['VITE_', 'TAURI_'],
   server: {
     port: 1420,
     strictPort: true,
+    host: HOST || false,
+    hmr: HOST
+      ? {
+          protocol: 'ws',
+          host: HOST,
+          port: 1421,
+        }
+      : undefined,
+    watch: {
+      ignored: ['**/src-tauri/**'],
+    },
   },
   build: {
     outDir: './dist',
-    // See https://tauri.app/v1/references/webview-versions for details
-    target: process.env.TAURI_PLATFORM == 'windows' ? 'chrome105' : 'safari15',
+    // See https://v2.tauri.app/reference/webview-versions/ for details
+    target: 'es2021',
     minify: !process.env.TAURI_DEBUG ? 'esbuild' : false,
-    sourcemap: !!process.env.TAURI_DEBUG,
     emptyOutDir: true,
-  },
-  // See https://vitest.dev/config/
-  test: {
-    include: ['tests/unit/**/*.{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}'],
   },
 })
