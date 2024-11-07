@@ -16,7 +16,7 @@ importers:
         version: 2.0.1
       '@vue/devtools':
         specifier: ^7.4.4
-        version: 7.4.4(vite@5.4.10(@types/node@22.9.0))(vue@3.5.12(typescript@5.6.3))
+        version: 7.6.3(vite@5.4.10(@types/node@22.9.0))(vue@3.5.12(typescript@5.6.3))
       pinia:
         specifier: 2.2.6
         version: 2.2.6(typescript@5.6.3)(vue@3.5.12(typescript@5.6.3))
@@ -892,8 +892,8 @@ packages:
   '@vue/devtools-shared@7.6.3':
     resolution: {integrity: sha512-wJW5QF27i16+sNQIaes8QoEZg1eqEgF83GkiPUlEQe9k7ZoHXHV7PRrnrxOKem42sIHPU813J2V/ZK1uqTJe6g==}
 
-  '@vue/devtools@7.4.4':
-    resolution: {integrity: sha512-isDBFA4GT1jS3SN9f4oSjvSMe+9GH4z2RvU3LFJX92Yvej2EUNU3J0YqSw2S9qsYC9oKVsL0XUmE7VSQAA0sZA==}
+  '@vue/devtools@7.6.3':
+    resolution: {integrity: sha512-JbcRWrq5jIQNHgn8fWGJVwqUegeY1nZoBy7nWMabCOtkFTTJRG1NN2q+ls9unqUaW0eflTORo+8UKcGqxp+ymQ==}
     hasBin: true
 
   '@vue/eslint-config-prettier@10.1.0':
@@ -3425,7 +3425,7 @@ snapshots:
     dependencies:
       rfdc: 1.4.1
 
-  '@vue/devtools@7.4.4(vite@5.4.10(@types/node@22.9.0))(vue@3.5.12(typescript@5.6.3))':
+  '@vue/devtools@7.6.3(vite@5.4.10(@types/node@22.9.0))(vue@3.5.12(typescript@5.6.3))':
     dependencies:
       '@vue/devtools-electron': 7.6.3(vite@5.4.10(@types/node@22.9.0))(vue@3.5.12(typescript@5.6.3))
       '@vue/devtools-kit': 7.6.3
