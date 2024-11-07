@@ -12,9 +12,9 @@ async function greet() {
 
 <template>
   <div>
-    <form class="row" @submit.prevent="greet">
+    <form class="" @submit.prevent="greet">
       <input id="greet-input" v-model="name" placeholder="Enter a name..." />
-      <button type="submit">Greet</button>
+      <button type="submit" class="btn">Greet</button>
     </form>
     <p>{{ greetMsg }}</p>
   </div>

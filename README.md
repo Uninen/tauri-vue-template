@@ -1,6 +1,6 @@
 # Tauri + Vue + Vite Template
 
-![Screenshot](./public/screenshot.png)
+![Screenshot](./public/v2_screenshot.webp)
 
 Simple project template for Tauri and Vue 3.
 
