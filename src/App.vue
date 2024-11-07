@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import GreetComponent from './components/GreetComponent.vue'
+const store = useStore()
+store.initApp()
 </script>
 
 <template>
