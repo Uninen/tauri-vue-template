@@ -9,6 +9,7 @@ on:
       - 'src-tauri/**'
       - 'tests/**'
       - 'pnpm-lock.yaml'
+      - 'src-tauri/Cargo.lock'
       - '.github/workflows/test.yml'
   pull_request:
     paths:
@@ -16,6 +17,7 @@ on:
       - 'src-tauri/**'
       - 'tests/**'
       - 'pnpm-lock.yaml'
+      - 'src-tauri/Cargo.lock'
       - '.github/workflows/test.yml'
 
 concurrency:

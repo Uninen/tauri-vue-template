@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 html {
-  @apply text-[14px] text-zinc-200 bg-zinc-800;
+  @apply text-[14px] text-gray-200 bg-gray-800;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -30,20 +30,22 @@ p {
 }
 
 .btn {
-  @apply bg-zinc-800 text-zinc-200 px-3 py-2 rounded-md my-4 border border-zinc-700 hover:bg-zinc-700 inline-block;
+  @apply bg-gray-800 text-gray-200 px-3 py-2 rounded-md my-4 border border-gray-700 hover:bg-gray-700 inline-block;
 }
 
 /* Borrowed from tauri-create-app styles */
 .logo {
   will-change: filter;
   transition: 0.75s;
-  @apply mx-4 my-6;
+  @apply mx-4 my-6 w-24 h-24;
 }
 
-.logo.tauri:hover {
-  filter: drop-shadow(0 0 2em #24c8db);
-}
-
+.logo.vite:hover,
+.logo.tauri:hover,
 .logo.vue:hover {
   filter: drop-shadow(0 0 2em #249b73);
+}
+
+input {
+  @apply bg-gray-700 text-gray-200 px-3 py-2 rounded-md my-4 border border-gray-700 mx-2;
 }

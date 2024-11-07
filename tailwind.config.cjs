@@ -1,21 +1,43 @@
-const resolve = require('path').resolve
-// const plugin = require('tailwindcss/plugin')
-// const defaultTheme = require('tailwindcss/defaultTheme')
-
-module.exports = {
-  content: [resolve(__dirname, 'index.html'), resolve(__dirname, 'src/**/*.{vue,ts}')],
-  // theme: {
-  //   extend: {
-  //     // here's how to extend fonts if needed
-  //     fontFamily: {
-  //       sans: [...defaultTheme.fontFamily.sans],
-  //     },
-  //   },
-  // },
-  plugins: [
-    // require('@tailwindcss/aspect-ratio'),
-    // require('@tailwindcss/line-clamp'),
-    // require('@tailwindcss/typography'),
-    // require('@tailwindcss/forms'),
-  ],
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ['./index.html', './src/**/*.{vue,ts}'],
+  theme: {
+    fontFamily: {
+      sans: [
+        // Windows
+        '-apple-system',
+        'BlinkMacSystemFont',
+        'Segoe UI',
+        // macOS
+        'system-ui',
+        // Linux
+        'Ubuntu',
+        'Cantarell',
+        'Noto Sans',
+        // Fallbacks
+        'Helvetica Neue',
+        'Arial',
+        'sans-serif',
+        // Emoji fonts
+        'Apple Color Emoji',
+        'Segoe UI Emoji',
+        'Segoe UI Symbol',
+        'Noto Color Emoji',
+      ],
+      mono: [
+        // Windows
+        'Cascadia Code',
+        'Consolas',
+        // macOS
+        'Menlo',
+        // Linux
+        'Ubuntu Mono',
+        'DejaVu Sans Mono',
+        // Fallbacks
+        'Courier New',
+        'monospace',
+      ],
+    },
+  },
+  plugins: [],
 }

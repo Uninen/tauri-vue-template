@@ -1,24 +1,20 @@
 # Tauri + Vue + Vite Template
 
-![Screenshot](./public/screenshot.png)
+![Screenshot](./public/v2_screenshot.webp)
 
-Simple project template for Tauri and Vue 3.
+Fully configured project template for Tauri and Vue 3 w/ TypeScript and CI.
 
 ## Features
 
-- Vue 3 / TypeScript frontend
-  - [ESLint](https://eslint.org/) + [Prettier](https://prettier.io/) configured
-  - [Vue-devtools](https://devtools.vuejs.org/) installed
-  - [Tailwind CSS](https://tailwindcss.com/) w/ PostCSS configured
-- Simple and fast [Vite](https://vitejs.dev/) config w/ HMR in development and optimizations for production builds
-  - [AutoImport plugin](https://github.com/antfu/unplugin-auto-import)
-- [Vitest](https://vitest.dev/) for unit tests
-- Github Actions for testing and building
-- Debugging configuration set up for VS Code
+- **Vue 3 (TypeScript)** frontend (with devtools)
+- **Vite** configured w/ [AutoImport plugin](https://github.com/antfu/unplugin-auto-import)
+- **Vitest** for unit tests
+- **Github Actions** fo proper testing / CI pipeline
+- **VS Code** configs for recommended plugins and debugging
 
 ## Setting Up
 
-1. Install [Tauri Prerequisites](https://tauri.app/v1/guides/getting-started/prerequisites)
+1. Install [Tauri Prerequisites](https://tauri.app/start/prerequisites/)
 2. Clone and install dependencies (this template uses `pnpm` by default):
 
 ```sh
@@ -27,7 +23,7 @@ pnpm i
 
 ## Usage
 
-A Tauri app has at least [two processes](https://tauri.app/v1/guides/architecture/process-model):
+A Tauri app has at least [two processes](https://tauri.app/concept/process-model/):
 
 - the Core Process (`backend`, or _main_ process in Electron terminology), and
 - the WebView process (`frontend`, or _renderer_ in Electron)
@@ -39,7 +35,7 @@ A Tauri app has at least [two processes](https://tauri.app/v1/guides/architectur
 Both back- and frontend start with a single command:
 
 ```sh
-pnpm dev
+pnpm tauri dev
 ```
 
 #### Testing
@@ -80,28 +76,16 @@ cargo upgrade
 The project has GitHub Actions set up which will automatically test and build your app with every push and PR. For building manually:
 
 ```sh
-pnpm build
+pnpm tauri build
 ```
 
 #### Releasing a new version
 
-1. Bump version number in `package.json`, `src-tauri/Cargo.toml`, and `src-tauri/tauri.conf.json`. ([This could be easier!](https://github.com/Uninen/tauri-vue-template/issues/18))
+1. Bump version number by running `pnpm bump [x.y.z]`
 2. Run `pnpm check` to update `Cargo.lock`
 3. Tag the commit you want to release with `vX.Y.Z`
 4. Edit the release notes and push (also tags!)
 5. Github workflow will automatically build a new draft release for this version. Publish when ready 🎉
-
-## Howto
-
-### Custom title bar styles (like `titleBarStyle: 'hidden'` in Electron)
-
-Tauri doesn't currently offer a method to hide the title bar without hiding all window chrome. There is, however, a fairly simple way to do it manually (with certain limitations; see [Tauri issue #2663](https://github.com/tauri-apps/tauri/issues/2663) for details).
-
-1. Add `cocoa` and `objc` crates to dependencies
-2. Add `set_transparent_titlebar` and `position_traffic_lights` from this gist: https://gist.github.com/Uninen/5377381eb81bdcd71b9d1859e46e3e29
-3. Call `set_transparent_titlebar` and `position_traffic_lights` from `setup` and `on_window_event` (example in the gist starting line 114) on any window you want affected.
-
-This implementation works but results in visible jerkyness of the traffic lights (on macOS) when the window is resized. (Alternatives discussed in detail in the issue #2663)
 
 ## Elsewhere
 

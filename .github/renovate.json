@@ -1,35 +1,20 @@
 {
-  "extends": [
-    "config:base",
-    "group:all",
-    "schedule:weekly",
-    ":widenPeerDependencies"
-  ],
-  "enabledManagers": [
-    "cargo",
-    "github-actions",
-    "npm"
-  ],
+  "extends": ["config:recommended", "group:all", "schedule:weekly", ":widenPeerDependencies"],
+  "enabledManagers": ["cargo", "github-actions", "npm"],
   "packageRules": [
     {
-      "updateTypes": [
-        "patch"
-      ],
+      "matchUpdateTypes": ["patch"],
       "enabled": false
     },
     {
-      "matchManagers": [
-        "cargo"
-      ],
+      "matchManagers": ["cargo"],
       "automerge": true,
-      "stabilityDays": 2
+      "minimumReleaseAge": "2 days"
     },
     {
-      "matchManagers": [
-        "npm"
-      ],
+      "matchManagers": ["npm"],
       "automerge": true,
-      "stabilityDays": 2
+      "minimumReleaseAge": "2 days"
     }
   ],
   "timezone": "Europe/Helsinki",
