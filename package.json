@@ -18,7 +18,7 @@
   "dependencies": {
     "@tauri-apps/api": "2.0.3",
     "@tauri-apps/plugin-shell": "2.0.1",
-    "@vue/devtools": "^7.4.4",
+    "@vue/devtools": "^7.6.3",
     "pinia": "2.2.6",
     "vue": "3.5.12"
   },
