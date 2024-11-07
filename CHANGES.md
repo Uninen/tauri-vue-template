@@ -3,6 +3,11 @@
 ## 2.0.0 (2024-11-07)
 
 - Feat: upgraded the template to Tauri v2.
+- Feat: added Pinia.
+- Feat: added CSP for security.
+- Feat: added new `bump` command for programatically bump version number.
+- Fix: fixed Vue devtools.
+- Chore: migrated to new Renovate config.
 - Chore: bumped all front deps.
 
 ## 0.4.0 (2023-12-09)
