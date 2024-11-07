@@ -1,33 +1,101 @@
-# Tauri + Vue + TypeScript
+# Tauri + Vue + Vite Template
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+![Screenshot](./public/screenshot.png)
 
-## Recommended IDE Setup
+Simple project template for Tauri and Vue 3.
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) + [Tauri](https://marketplace.visualstudio.com/items?itemName=tauri-apps.tauri-vscode) + [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer)
+## Features
 
-## Type Support For `.vue` Imports in TS
+- Vue 3 / TypeScript frontend
+  - [ESLint](https://eslint.org/) + [Prettier](https://prettier.io/) configured
+  - [Vue-devtools](https://devtools.vuejs.org/) installed
+  - [Tailwind CSS](https://tailwindcss.com/) w/ PostCSS configured
+- Simple and fast [Vite](https://vitejs.dev/) config w/ HMR in development and optimizations for production builds
+  - [AutoImport plugin](https://github.com/antfu/unplugin-auto-import)
+- [Vitest](https://vitest.dev/) for unit tests
+- Github Actions for testing and building
+- Debugging configuration set up for VS Code
 
-Since TypeScript cannot handle type information for `.vue` imports, they are shimmed to be a generic Vue component type by default. In most cases this is fine if you don't really care about component prop types outside of templates. However, if you wish to get actual prop types in `.vue` imports (for example to get props validation when using manual `h(...)` calls), you can enable Volar's Take Over mode by following these steps:
+## Setting Up
 
-1. Run `Extensions: Show Built-in Extensions` from VS Code's command palette, look for `TypeScript and JavaScript Language Features`, then right click and select `Disable (Workspace)`. By default, Take Over mode will enable itself if the default TypeScript extension is disabled.
-2. Reload the VS Code window by running `Developer: Reload Window` from the command palette.
+1. Install [Tauri Prerequisites](https://tauri.app/v1/guides/getting-started/prerequisites)
+2. Clone and install dependencies (this template uses `pnpm` by default):
 
-You can learn more about Take Over mode [here](https://github.com/johnsoncodehk/volar/discussions/471).
+```sh
+pnpm i
+```
 
-##
+## Usage
 
-Template created! To get started run:
-cd tauri-app
-pnpm install
-pnpm tauri android init
-pnpm tauri ios init
+A Tauri app has at least [two processes](https://tauri.app/v1/guides/architecture/process-model):
 
-For Desktop development, run:
-pnpm tauri dev
+- the Core Process (`backend`, or _main_ process in Electron terminology), and
+- the WebView process (`frontend`, or _renderer_ in Electron)
 
-For Android development, run:
-pnpm tauri android dev
+### 🦢 Frontend (TS, PnPM)
 
-For iOS development, run:
-pnpm tauri ios dev
+#### Running Development Server
+
+Both back- and frontend start with a single command:
+
+```sh
+pnpm dev
+```
+
+#### Testing
+
+```sh
+pnpm test
+```
+
+### 🦀 Backend (Rust, Cargo)
+
+Backend code lives in `src-tauri/` (Following commands are to be run from there.)
+
+#### Finding Outdated Rust Dependencies
+
+If you have [cargo-outdated](https://github.com/kbknapp/cargo-outdated) installed:
+
+```sh
+cargo outdated
+```
+
+#### Upgrading Rust Dependencies
+
+If you have [cargo-edit](https://github.com/killercup/cargo-edit) installed:
+
+```sh
+cargo upgrade
+```
+
+### Debugging
+
+- The `dev` command has by default `RUST_BACKTRACE=1` set which makes Rust output full backtraces to the console. (Remove it from the `package.json` command if you don't want it).
+- If you use VS Code, you can debug Rust code with the included `Debug Tauri` config.
+
+### Building and releasing
+
+#### Building
+
+The project has GitHub Actions set up which will automatically test and build your app with every push and PR. For building manually:
+
+```sh
+pnpm build
+```
+
+#### Releasing a new version
+
+1. Bump version number by running `pnpm bump [x.y.z]`
+2. Run `pnpm check` to update `Cargo.lock`
+3. Tag the commit you want to release with `vX.Y.Z`
+4. Edit the release notes and push (also tags!)
+5. Github workflow will automatically build a new draft release for this version. Publish when ready 🎉
+
+## Elsewhere
+
+- [Follow @uninen](https://twitter.com/uninen) on Twitter
+- Read my continuously updating learnings around Tauri / Vue / TypeScript and other Web development topics from my [Today I Learned site](https://til.unessa.net/)
+
+## Contributing
+
+Contributions are welcome! Please follow the [code of conduct](./CODE_OF_CONDUCT.md) when interacting with others.

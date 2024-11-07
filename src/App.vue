@@ -34,8 +34,7 @@ import GreetComponent from './components/GreetComponent.vue'
 </style>
 <style>
 :root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 24px;
   font-weight: 400;
 

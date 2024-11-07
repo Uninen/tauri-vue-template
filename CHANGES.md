@@ -1,5 +1,10 @@
 # Changelog
 
+## 2.0.0 (2024-11-07)
+
+- Feat: upgraded the template to Tauri v2.
+- Chore: bumped all front deps.
+
 ## 0.4.0 (2023-12-09)
 
 - Feat: enabled automerge for Renovate Bot.

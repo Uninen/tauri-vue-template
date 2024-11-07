@@ -11,7 +11,9 @@
     "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview",
     "type-check": "vue-tsc --build --force",
-    "tauri": "cross-env RUST_BACKTRACE=1 tauri"
+    "tauri": "cross-env RUST_BACKTRACE=1 tauri",
+    "bump": "node bump-version.cjs",
+    "check": "cargo check --manifest-path src-tauri/Cargo.toml"
   },
   "dependencies": {
     "@tauri-apps/api": "2.0.3",
