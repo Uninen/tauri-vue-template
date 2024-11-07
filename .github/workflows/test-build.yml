@@ -9,7 +9,9 @@ on:
       - 'src-tauri/**'
       - 'tests/**'
       - 'pnpm-lock.yaml'
+      - 'src-tauri/Cargo.lock'
       - '.github/workflows/test-build.yml'
+  pull_request:
   workflow_dispatch:
 
 concurrency:
@@ -17,13 +19,13 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  test-build:
+  build-tauri:
+    permissions:
+      contents: write
     strategy:
       fail-fast: true
-      matrix:
-        platform: [macos-latest, ubuntu-latest, windows-latest]
 
-    runs-on: ${{ matrix.platform }}
+    runs-on: 'ubuntu-22.04'
     steps:
       - uses: actions/checkout@v4
 
@@ -39,16 +41,13 @@ jobs:
           node-version: 20
           cache: 'pnpm'
 
-      - name: Install Rust stable
-        uses: actions-rs/toolchain@v1
-        with:
-          toolchain: stable
+      - name: install Rust stable
+        uses: dtolnay/rust-toolchain@stable
 
-      - name: Install Linux dependencies
-        if: matrix.platform == 'ubuntu-latest'
+      - name: install dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install -y libgtk-3-dev libwebkit2gtk-4.0-dev libappindicator3-dev librsvg2-dev patchelf
+          sudo apt-get install -y libwebkit2gtk-4.1-dev libappindicator3-dev librsvg2-dev patchelf
 
-      - name: Build Vite + Tauri
-        run: pnpm build
+      - name: Run unit tests
+        run: pnpm tauri build
