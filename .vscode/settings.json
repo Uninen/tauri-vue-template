@@ -1,0 +1,7 @@
+{
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.patterns": {
+    "env.d.ts": "auto-imports.d.ts, components.d.ts, interface-extensions.d.ts",
+    "tsconfig.json": "tsconfig.*.json"
+  }
+}

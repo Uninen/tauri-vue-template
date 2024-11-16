@@ -1,5 +1,12 @@
 # Changelog
 
+## 2.0.2 (2024-11-16)
+
+- Feat: added `@egoist/tailwindcss-icons` plugin.
+- Enhancement: added optimization settings to Tauri config.
+- Chore: clean up v1->v2 leftovers.
+- Fix: Vite, Eslint configs..
+
 ## 2.0.0 (2024-11-07)
 
 - Feat: upgraded the template to Tauri v2.
