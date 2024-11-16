@@ -1,3 +1,6 @@
+const defaultTheme = require('tailwindcss/defaultTheme')
+const { iconsPlugin, getIconCollections } = require('@egoist/tailwindcss-icons')
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ['./index.html', './src/**/*.{vue,ts}'],
@@ -37,7 +40,13 @@ export default {
         'Courier New',
         'monospace',
       ],
+      serif: [...defaultTheme.fontFamily.serif],
     },
   },
-  plugins: [],
+  plugins: [
+    iconsPlugin({
+      // Collections: https://icones.js.org/
+      collections: getIconCollections(['mdi']),
+    }),
+  ],
 }
