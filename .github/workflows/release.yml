@@ -62,7 +62,7 @@ jobs:
         with:
           tagName: v__VERSION__ # the action automatically replaces \_\_VERSION\_\_ with the app version.
           releaseName: 'v__VERSION__'
-          releaseBody: 'See [CHANGES.md](https://github.com/Uninen/tauri-vue-template/blob/main/CHANGES.md) for a complete list of changes.'
+          releaseBody: 'Note: macOS builds are not signed so in order to run the app, after moving the app to Applications folder you need to run xattr -c /Applications/tauri-app.app in the terminal. (See tauri-apps/tauri-action#919) See [CHANGES.md](https://github.com/Uninen/tauri-vue-template/blob/main/CHANGES.md) for a complete list of changes.'
           releaseDraft: true
           prerelease: false
           args: ${{ matrix.args }}
