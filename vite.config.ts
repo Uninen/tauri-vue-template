@@ -3,6 +3,8 @@ import { fileURLToPath, URL } from 'node:url'
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
 import { defineConfig } from 'vite'
+import { nodePolyfills } from 'vite-plugin-node-polyfills'
+import topLevelAwait from 'vite-plugin-top-level-await'
 import vueDevTools from 'vite-plugin-vue-devtools'
 import { version as pkgVersion } from './package.json'
 
@@ -16,6 +18,8 @@ if (process.env.NODE_ENV === 'production') {
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
+    topLevelAwait(),
+    nodePolyfills(),
     vue(),
     vueDevTools(),
     AutoImport({
@@ -66,5 +70,6 @@ export default defineConfig({
     target: 'es2021',
     minify: !process.env.TAURI_DEBUG ? 'esbuild' : false,
     emptyOutDir: true,
+    chunkSizeWarningLimit: 1024,
   },
 })
