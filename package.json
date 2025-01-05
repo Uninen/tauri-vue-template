@@ -16,7 +16,7 @@
     "check": "cargo check --manifest-path src-tauri/Cargo.toml"
   },
   "dependencies": {
-    "@tauri-apps/api": "2.1.1",
+    "@tauri-apps/api": "2.2.0",
     "@tauri-apps/plugin-shell": "2.2.0",
     "@vue/devtools": "7.6.4",
     "pinia": "2.3.0",
@@ -27,11 +27,11 @@
     "@iconify/json": "2.2.273",
     "@iconify/types": "2.0.0",
     "@pinia/testing": "0.1.7",
-    "@tauri-apps/cli": "2.1.0",
+    "@tauri-apps/cli": "2.2.1",
     "@tsconfig/node22": "22.0.0",
     "@types/lodash-es": "4.17.12",
     "@types/node": "22.10.2",
-    "@typescript-eslint/eslint-plugin": "8.18.2",
+    "@typescript-eslint/eslint-plugin": "8.19.0",
     "@vitejs/plugin-vue": "5.2.0",
     "@vue/eslint-config-prettier": "10.1.0",
     "@vue/test-utils": "2.4.6",
