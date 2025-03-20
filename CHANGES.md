@@ -2,7 +2,11 @@
 
 ## 2.3.0 (2025-03-20)
 
+Note: starting from this release, the versioning of this template will follow
+[Tauri.major].[Tauri.minor].[Template.version] versioning scheme.
+
 - Enhancement: open browser devtools by default.
+- Enhancement: use considerable leaner icons dependency for faster development.
 - Refactor: bumped Tailwind to version 4.
 - Fix: allow pnpm postinstall scripts (Fixes #87, thanks @onurusluca for the report)
 - Chore: bumped all deps.
