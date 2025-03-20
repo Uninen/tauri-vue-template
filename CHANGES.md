@@ -8,6 +8,7 @@ Note: starting from this release, the versioning of this template will follow
 - Feat: added `tauri-plugin-prevent-default` to prevent default browser shortcuts.
 - Enhancement: open browser devtools by default.
 - Enhancement: use considerable leaner icons dependency for faster development.
+- Enhancement: updated Vite build config.
 - Refactor: bumped Tailwind to version 4.
 - Fix: allow pnpm postinstall scripts (Fixes #87, thanks @onurusluca for the report)
 - Chore: bumped all deps.
