@@ -10,7 +10,7 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 import { version as pkgVersion } from './package.json'
 
 const HOST = process.env.TAURI_DEV_HOST
-const PLATFORM = process.env.TAURI_PLATFORM
+const PLATFORM = process.env.TAURI_ENV_PLATFORM
 process.env.VITE_APP_VERSION = pkgVersion
 if (process.env.NODE_ENV === 'production') {
   process.env.VITE_APP_BUILD_EPOCH = new Date().getTime().toString()
@@ -69,9 +69,12 @@ export default defineConfig({
   build: {
     outDir: './dist',
     // See https://v2.tauri.app/reference/webview-versions/ for details
-    target: 'es2021',
+    target: PLATFORM == 'windows'
+        ? 'chrome105'
+        : 'safari13',
     minify: !process.env.TAURI_DEBUG ? 'esbuild' : false,
     emptyOutDir: true,
     chunkSizeWarningLimit: 1024,
+    sourcemap: !!process.env.TAURI_ENV_DEBUG,
   },
 })
