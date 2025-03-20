@@ -1,7 +1,9 @@
 {
   "explorer.fileNesting.enabled": true,
   "explorer.fileNesting.patterns": {
-    "env.d.ts": "auto-imports.d.ts, components.d.ts, interface-extensions.d.ts",
-    "tsconfig.json": "tsconfig.*.json"
+    "env.d.ts": "auto-imports.d.ts, components.d.ts, interface-extensions.d.ts, .eslintrc-auto-import.json",
+    "tsconfig.json": "tsconfig.*.json",
+    "README.md": "README.md, CHANGES.md, CODE_OF_CONDUCT.md, CONTRIBUTING.md, LICENSE",
+    ".editorconfig": ".editorconfig, .prettierrc.json, biome.json, eslint.config.cjs"
   }
 }
