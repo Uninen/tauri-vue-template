@@ -63,9 +63,6 @@ importers:
       '@vue/tsconfig':
         specifier: 0.7.0
         version: 0.7.0(typescript@5.7.2)(vue@3.5.13(typescript@5.7.2))
-      autoprefixer:
-        specifier: 10.4.20
-        version: 10.4.20(postcss@8.5.1)
       concurrently:
         specifier: 9.1.0
         version: 9.1.0
@@ -84,12 +81,6 @@ importers:
       lodash-es:
         specifier: 4.17.21
         version: 4.17.21
-      postcss:
-        specifier: 8.5.1
-        version: 8.5.1
-      postcss-nesting:
-        specifier: 13.0.1
-        version: 13.0.1(postcss@8.5.1)
       prettier:
         specifier: 3.4.2
         version: 3.4.2
@@ -275,18 +266,6 @@ packages:
   '@babel/types@7.26.0':
     resolution: {integrity: sha512-Z/yiTPj+lDVnF7lWeKCIJzaIkI0vYO87dMpZ4bg4TDrFe4XXLFWL1TbXU27gBP3QccxV9mZICCrnjnYlJjXHOA==}
     engines: {node: '>=6.9.0'}
-
-  '@csstools/selector-resolve-nested@3.0.0':
-    resolution: {integrity: sha512-ZoK24Yku6VJU1gS79a5PFmC8yn3wIapiKmPgun0hZgEI5AOqgH2kiPRsPz1qkGv4HL+wuDLH83yQyk6inMYrJQ==}
-    engines: {node: '>=18'}
-    peerDependencies:
-      postcss-selector-parser: ^7.0.0
-
-  '@csstools/selector-specificity@5.0.0':
-    resolution: {integrity: sha512-PCqQV3c4CoVm3kdPhyeZ07VmBRdH2EpMFA/pd9OASpOEC3aXNGoqPDAZ80D0cLpMBxnmk0+yNhGsEx31hq7Gtw==}
-    engines: {node: '>=18'}
-    peerDependencies:
-      postcss-selector-parser: ^7.0.0
 
   '@egoist/tailwindcss-icons@1.8.1':
     resolution: {integrity: sha512-hqZeASrhT6BOeaBHYDPB0yBH/zgMKqmm7y2Rsq0c4iRnNVv1RWEiXMBMJB38JsDMTHME450FKa/wvdaIhED+Iw==}
@@ -1165,13 +1144,6 @@ packages:
     resolution: {integrity: sha512-Izi8RQcffqCeNVgFigKli1ssklIbpHnCYc6AknXGYoB6grJqyeby7jv12JUQgmTAnIDnbck1uxksT4dzN3PWBA==}
     engines: {node: '>=12'}
 
-  autoprefixer@10.4.20:
-    resolution: {integrity: sha512-XY25y5xSv/wEoqzDyXXME4AFfkZI0P23z6Fs3YgymDnKJkCGOnkL0iTxCa85UTqaSgfcqyf3UA6+c7wUvx/16g==}
-    engines: {node: ^10 || ^12 || >=14}
-    hasBin: true
-    peerDependencies:
-      postcss: ^8.1.0
-
   available-typed-arrays@1.0.7:
     resolution: {integrity: sha512-wvUjBtSGN7+7SjNpq/9M2Tg350UZD3q62IFZLbRAR1bSMlCo1ZaeW+BJ+D090e4hIIZLBcTDWe4Mh4jvUDajzQ==}
     engines: {node: '>= 0.4'}
@@ -1740,9 +1712,6 @@ packages:
     resolution: {integrity: sha512-Ld2g8rrAyMYFXBhEqMz8ZAHBi4J4uS1i/CxGMDnjyFWddMXLVcDp051DZfu+t7+ab7Wv6SMqpWmyFIj5UbfFvg==}
     engines: {node: '>=14'}
 
-  fraction.js@4.3.7:
-    resolution: {integrity: sha512-ZsDfxO51wGAXREY55a7la9LScWpwv9RxIrYABrlvOFBlH/ShPnrtsXeuUIfXKKOVicNxQ+o8JTbJvjS4M89yew==}
-
   fs-extra@11.2.0:
     resolution: {integrity: sha512-PmDi3uwK5nFuXh7XDTlVnS17xJS7vW36is2+w3xcv8SVxiB4NyATf4ctkVY5bkSjX0Y4nbvZCq1/EjtEyr9ktw==}
     engines: {node: '>=14.14'}
@@ -2231,10 +2200,6 @@ packages:
     resolution: {integrity: sha512-6eZs5Ls3WtCisHWp9S2GUy8dqkpGi4BVSz3GaqiE6ezub0512ESztXUwUB6C6IKbQkY2Pnb/mD4WYojCRwcwLA==}
     engines: {node: '>=0.10.0'}
 
-  normalize-range@0.1.2:
-    resolution: {integrity: sha512-bdok/XvKII3nUpklnV6P2hxtMNrCboOjAcyBuQnWEhO665FwrSNRxU+AqpsyvO6LgGYPspN+lu5CLtw4jPRKNA==}
-    engines: {node: '>=0.10.0'}
-
   normalize-url@6.1.0:
     resolution: {integrity: sha512-DlL+XwOy3NxAQ8xuC0okPgK46iuVNAK01YN7RueYBqqFeGsBjV9XmCAzAdgt+667bCl5kPh9EqKKDwnaPG1I7A==}
     engines: {node: '>=10'}
@@ -2431,18 +2396,8 @@ packages:
     peerDependencies:
       postcss: ^8.2.14
 
-  postcss-nesting@13.0.1:
-    resolution: {integrity: sha512-VbqqHkOBOt4Uu3G8Dm8n6lU5+9cJFxiuty9+4rcoyRPO9zZS1JIs6td49VIoix3qYqELHlJIn46Oih9SAKo+yQ==}
-    engines: {node: '>=18'}
-    peerDependencies:
-      postcss: ^8.4
-
   postcss-selector-parser@6.1.2:
     resolution: {integrity: sha512-Q8qQfPiZ+THO/3ZrOrO0cJJKfpYCagtMUkXbnEfmgUjwXg6z/WBeOyS9APBBPCTSiDV+s4SwQGu8yFsiMRIudg==}
-    engines: {node: '>=4'}
-
-  postcss-selector-parser@7.0.0:
-    resolution: {integrity: sha512-9RbEr1Y7FFfptd/1eEdntyjMwLeghW1bHX9GWjXo19vx4ytPQhANltvVxDggzJl7mnWM+dX28kb6cyS/4iQjlQ==}
     engines: {node: '>=4'}
 
   postcss-value-parser@4.2.0:
@@ -3368,14 +3323,6 @@ snapshots:
       '@babel/helper-string-parser': 7.25.9
       '@babel/helper-validator-identifier': 7.25.9
 
-  '@csstools/selector-resolve-nested@3.0.0(postcss-selector-parser@7.0.0)':
-    dependencies:
-      postcss-selector-parser: 7.0.0
-
-  '@csstools/selector-specificity@5.0.0(postcss-selector-parser@7.0.0)':
-    dependencies:
-      postcss-selector-parser: 7.0.0
-
   '@egoist/tailwindcss-icons@1.8.1(tailwindcss@3.4.15)':
     dependencies:
       '@iconify/utils': 2.1.33
@@ -4241,16 +4188,6 @@ snapshots:
 
   assertion-error@2.0.1: {}
 
-  autoprefixer@10.4.20(postcss@8.5.1):
-    dependencies:
-      browserslist: 4.24.2
-      caniuse-lite: 1.0.30001680
-      fraction.js: 4.3.7
-      normalize-range: 0.1.2
-      picocolors: 1.1.1
-      postcss: 8.5.1
-      postcss-value-parser: 4.2.0
-
   available-typed-arrays@1.0.7:
     dependencies:
       possible-typed-array-names: 1.0.0
@@ -4943,8 +4880,6 @@ snapshots:
       cross-spawn: 7.0.6
       signal-exit: 4.1.0
 
-  fraction.js@4.3.7: {}
-
   fs-extra@11.2.0:
     dependencies:
       graceful-fs: 4.2.11
@@ -5420,8 +5355,6 @@ snapshots:
 
   normalize-path@3.0.0: {}
 
-  normalize-range@0.1.2: {}
-
   normalize-url@6.1.0: {}
 
   npm-run-path@6.0.0:
@@ -5597,19 +5530,7 @@ snapshots:
       postcss: 8.5.1
       postcss-selector-parser: 6.1.2
 
-  postcss-nesting@13.0.1(postcss@8.5.1):
-    dependencies:
-      '@csstools/selector-resolve-nested': 3.0.0(postcss-selector-parser@7.0.0)
-      '@csstools/selector-specificity': 5.0.0(postcss-selector-parser@7.0.0)
-      postcss: 8.5.1
-      postcss-selector-parser: 7.0.0
-
   postcss-selector-parser@6.1.2:
-    dependencies:
-      cssesc: 3.0.0
-      util-deprecate: 1.0.2
-
-  postcss-selector-parser@7.0.0:
     dependencies:
       cssesc: 3.0.0
       util-deprecate: 1.0.2
