@@ -1,4 +1,4 @@
-name: 'publish'
+name: "publish"
 
 on:
   push:
@@ -18,31 +18,31 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          - platform: 'macos-latest'
-            args: '--target aarch64-apple-darwin'
+          - platform: "macos-latest"
+            args: "--target aarch64-apple-darwin"
           # Uncomment for Intel builds
           #   - platform: 'macos-latest' # for Intel based macs.
           #     args: '--target x86_64-apple-darwin'
-          - platform: 'ubuntu-24.04'
-            args: ''
-          - platform: 'windows-latest'
-            args: ''
+          - platform: "ubuntu-24.04"
+            args: ""
+          - platform: "windows-latest"
+            args: ""
 
     runs-on: ${{ matrix.platform }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4.2.2
 
       - name: Install pnpm + deps
-        uses: pnpm/action-setup@v4
+        uses: pnpm/action-setup@v4.1.0
         with:
-          version: 9
+          version: 10
           run_install: true
 
       - name: Use Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v4.3.0
         with:
           node-version: 22
-          cache: 'pnpm'
+          cache: "pnpm"
 
       - name: install Rust stable
         uses: dtolnay/rust-toolchain@stable
@@ -56,13 +56,13 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y libwebkit2gtk-4.1-dev libappindicator3-dev librsvg2-dev patchelf
 
-      - uses: tauri-apps/tauri-action@v0
+      - uses: tauri-apps/tauri-action@action-v0.5.20
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           tagName: v__VERSION__ # the action automatically replaces \_\_VERSION\_\_ with the app version.
-          releaseName: 'v__VERSION__'
-          releaseBody: 'Note: macOS builds are not signed so in order to run the app, after moving the app to Applications folder you need to run xattr -c /Applications/tauri-app.app in the terminal. (See tauri-apps/tauri-action#919) See [CHANGES.md](https://github.com/Uninen/tauri-vue-template/blob/main/CHANGES.md) for a complete list of changes.'
+          releaseName: "v__VERSION__"
+          releaseBody: "Note: macOS builds are not signed so in order to run the app, after moving the app to Applications folder you need to run xattr -c /Applications/tauri-app.app in the terminal. (See tauri-apps/tauri-action#919) See [CHANGES.md](https://github.com/Uninen/tauri-vue-template/blob/main/CHANGES.md) for a complete list of changes."
           releaseDraft: true
           prerelease: false
           args: ${{ matrix.args }}
