@@ -1,7 +1,7 @@
 import { acceptHMRUpdate, defineStore } from 'pinia'
 
 const versionString =
-  import.meta.env.MODE === 'development' ? import.meta.env.VITE_APP_VERSION + '-dev' : import.meta.env.VITE_APP_VERSION
+  import.meta.env.MODE === 'development' ? `${import.meta.env.VITE_APP_VERSION}-dev` : import.meta.env.VITE_APP_VERSION
 
 export const useStore = defineStore('main', {
   state: () => ({
@@ -19,11 +19,11 @@ export const useStore = defineStore('main', {
   },
 
   getters: {
-    isReady: state => {
+    isReady: (state) => {
       return !state.isInitialized
     },
 
-    storeGreet: state => {
+    storeGreet: (state) => {
       if (state.name.length > 0) {
         return `Greetings from Pinia store, ${state.name}!`
       }
