@@ -5,6 +5,7 @@
 Note: starting from this release, the versioning of this template will follow
 [Tauri.major].[Tauri.minor].[Template.version] versioning scheme.
 
+- Feat: added `tauri-plugin-prevent-default` to prevent default browser shortcuts.
 - Enhancement: open browser devtools by default.
 - Enhancement: use considerable leaner icons dependency for faster development.
 - Refactor: bumped Tailwind to version 4.
