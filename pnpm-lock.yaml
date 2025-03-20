@@ -9,110 +9,110 @@ importers:
   .:
     dependencies:
       '@tauri-apps/api':
-        specifier: 2.2.0
+        specifier: ^2.2.0
         version: 2.2.0
       '@tauri-apps/plugin-shell':
-        specifier: 2.2.0
+        specifier: ^2.2.0
         version: 2.2.0
       '@vue/devtools':
-        specifier: 7.7.0
+        specifier: ^7.7.0
         version: 7.7.0(vite@6.0.5(@types/node@22.10.2)(jiti@2.4.0)(yaml@2.6.0))(vue@3.5.13(typescript@5.7.2))
       pinia:
-        specifier: 2.3.0
+        specifier: ^2.3.0
         version: 2.3.0(typescript@5.7.2)(vue@3.5.13(typescript@5.7.2))
       vue:
-        specifier: 3.5.13
+        specifier: ^3.5.13
         version: 3.5.13(typescript@5.7.2)
     devDependencies:
       '@egoist/tailwindcss-icons':
-        specifier: 1.8.1
+        specifier: ^1.8.1
         version: 1.8.1(tailwindcss@3.4.15)
       '@iconify/json':
-        specifier: 2.2.273
+        specifier: ^2.2.273
         version: 2.2.273
       '@iconify/types':
-        specifier: 2.0.0
+        specifier: ^2.0.0
         version: 2.0.0
       '@pinia/testing':
-        specifier: 0.1.7
+        specifier: ^0.1.7
         version: 0.1.7(pinia@2.3.0(typescript@5.7.2)(vue@3.5.13(typescript@5.7.2)))(vue@3.5.13(typescript@5.7.2))
       '@tauri-apps/cli':
-        specifier: 2.2.1
+        specifier: ^2.2.1
         version: 2.2.1
       '@tsconfig/node22':
-        specifier: 22.0.0
+        specifier: ^22.0.0
         version: 22.0.0
       '@types/lodash-es':
-        specifier: 4.17.12
+        specifier: ^4.17.12
         version: 4.17.12
       '@types/node':
-        specifier: 22.10.2
+        specifier: ^22.10.2
         version: 22.10.2
       '@typescript-eslint/eslint-plugin':
-        specifier: 8.20.0
+        specifier: ^8.20.0
         version: 8.20.0(@typescript-eslint/parser@8.13.0(eslint@9.18.0(jiti@2.4.0))(typescript@5.7.2))(eslint@9.18.0(jiti@2.4.0))(typescript@5.7.2)
       '@vitejs/plugin-vue':
-        specifier: 5.2.0
+        specifier: ^5.2.0
         version: 5.2.0(vite@6.0.5(@types/node@22.10.2)(jiti@2.4.0)(yaml@2.6.0))(vue@3.5.13(typescript@5.7.2))
       '@vue/eslint-config-prettier':
-        specifier: 10.1.0
+        specifier: ^10.1.0
         version: 10.1.0(eslint@9.18.0(jiti@2.4.0))(prettier@3.4.2)
       '@vue/test-utils':
-        specifier: 2.4.6
+        specifier: ^2.4.6
         version: 2.4.6
       '@vue/tsconfig':
-        specifier: 0.7.0
+        specifier: ^0.7.0
         version: 0.7.0(typescript@5.7.2)(vue@3.5.13(typescript@5.7.2))
       concurrently:
-        specifier: 9.1.0
+        specifier: ^9.1.0
         version: 9.1.0
       cross-env:
-        specifier: 7.0.3
+        specifier: ^7.0.3
         version: 7.0.3
       eslint:
-        specifier: 9.18.0
+        specifier: ^9.18.0
         version: 9.18.0(jiti@2.4.0)
       eslint-plugin-security:
-        specifier: 3.0.1
+        specifier: ^3.0.1
         version: 3.0.1
       eslint-plugin-vue:
-        specifier: 9.32.0
+        specifier: ^9.32.0
         version: 9.32.0(eslint@9.18.0(jiti@2.4.0))
       lodash-es:
-        specifier: 4.17.21
+        specifier: ^4.17.21
         version: 4.17.21
       prettier:
-        specifier: 3.4.2
+        specifier: ^3.4.2
         version: 3.4.2
       tailwindcss:
-        specifier: 3.4.15
+        specifier: ^3.4.15
         version: 3.4.15
       typescript:
-        specifier: 5.7.2
+        specifier: ^5.7.2
         version: 5.7.2
       unplugin-auto-import:
-        specifier: 19.0.0
+        specifier: ^19.0.0
         version: 19.0.0(rollup@4.27.2)
       unplugin-vue-components:
-        specifier: 28.0.0
+        specifier: ^28.0.0
         version: 28.0.0(@babel/parser@7.26.2)(rollup@4.27.2)(vue@3.5.13(typescript@5.7.2))
       vite:
-        specifier: 6.0.5
+        specifier: ^6.0.5
         version: 6.0.5(@types/node@22.10.2)(jiti@2.4.0)(yaml@2.6.0)
       vite-plugin-node-polyfills:
-        specifier: 0.22.0
+        specifier: ^0.22.0
         version: 0.22.0(rollup@4.27.2)(vite@6.0.5(@types/node@22.10.2)(jiti@2.4.0)(yaml@2.6.0))
       vite-plugin-top-level-await:
-        specifier: 1.4.4
+        specifier: ^1.4.4
         version: 1.4.4(rollup@4.27.2)(vite@6.0.5(@types/node@22.10.2)(jiti@2.4.0)(yaml@2.6.0))
       vite-plugin-vue-devtools:
-        specifier: 7.7.0
+        specifier: ^7.7.0
         version: 7.7.0(rollup@4.27.2)(vite@6.0.5(@types/node@22.10.2)(jiti@2.4.0)(yaml@2.6.0))(vue@3.5.13(typescript@5.7.2))
       vitest:
-        specifier: 3.0.2
+        specifier: ^3.0.2
         version: 3.0.2(@types/node@22.10.2)(jiti@2.4.0)(yaml@2.6.0)
       vue-tsc:
-        specifier: 2.2.0
+        specifier: ^2.2.0
         version: 2.2.0(typescript@5.7.2)
 
 packages:
@@ -547,15 +547,6 @@ packages:
 
   '@rollup/plugin-virtual@3.0.2':
     resolution: {integrity: sha512-10monEYsBp3scM4/ND4LNH5Rxvh3e/cVeL3jWTgZ2SrQ+BmUoQcopVQvnaMcOnykb1VkxUFuDAN+0FnpTFRy2A==}
-    engines: {node: '>=14.0.0'}
-    peerDependencies:
-      rollup: ^1.20.0||^2.0.0||^3.0.0||^4.0.0
-    peerDependenciesMeta:
-      rollup:
-        optional: true
-
-  '@rollup/pluginutils@5.1.3':
-    resolution: {integrity: sha512-Pnsb6f32CD2W3uCaLZIzDmeFyQ2b8UWMFI7xtwUezpcGBDVDW6y9XgAWIlARiGAo6eNF5FK5aQTr0LFyNyqq5A==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
       rollup: ^1.20.0||^2.0.0||^3.0.0||^4.0.0
@@ -1365,10 +1356,6 @@ packages:
     engines: {node: '>=10.14', npm: '>=6', yarn: '>=1'}
     hasBin: true
 
-  cross-spawn@7.0.5:
-    resolution: {integrity: sha512-ZVJrKKYunU38/76t0RMOulHOnUcbU9GbpWKAOZ0mhjr7CX6FVrH+4FrAapSOekrgFQ3f/8gwMEuIft0aKq6Hug==}
-    engines: {node: '>= 8'}
-
   cross-spawn@7.0.6:
     resolution: {integrity: sha512-uV2QOWP2nWzsy2aMp8aRibhi9dlzF5Hgh5SHaB9OiTGEyDTiJJyx0uy51QXdyWbtAHNua4XJzUKca3OzKUd3vA==}
     engines: {node: '>= 8'}
@@ -1661,10 +1648,6 @@ packages:
 
   fast-diff@1.3.0:
     resolution: {integrity: sha512-VxPP4NqbUjj6MaAOafWeUn2cXWLcCtljklUtZf0Ind4XQ+QPtmA0b18zZy0jIQx+ExRVCR/ZQpBmik5lXshNsw==}
-
-  fast-glob@3.3.2:
-    resolution: {integrity: sha512-oX2ruAFQwf/Orj8m737Y5adxDQO0LAB7/S5MnxCdTNDd4p6BsyIVsv9JQsATbTSq8KHRpLwIHbVlUNatxd+1Ow==}
-    engines: {node: '>=8.6.0'}
 
   fast-glob@3.3.3:
     resolution: {integrity: sha512-7MptL8U0cqcFdzIzwOTHoilX9x5BrNqye7Z/LuC7kCMRio1EMSyqRK3BEAUD7sXRq4iT4AzTVuZdhgQ2TCvYLg==}
@@ -2044,10 +2027,6 @@ packages:
   lines-and-columns@1.2.4:
     resolution: {integrity: sha512-7ylylesZQ/PV29jhEDl3Ufjo6ZX7gCqJr5F7PKrqc93v7fzSymt1BpwEU8nAUXs8qzzvqhbjhK5QZg6Mt/HkBg==}
 
-  local-pkg@0.5.0:
-    resolution: {integrity: sha512-ok6z3qlYyCDS4ZEU27HaU6x/xZa9Whf8jD4ptH5UZTQYZVYeb9bnZ3ojVhiJNLiXK1Hfc0GNbLXcmZ5plLDDBg==}
-    engines: {node: '>=14'}
-
   local-pkg@0.5.1:
     resolution: {integrity: sha512-9rrA30MRRP3gBD3HTGnC6cDFpaE1kVDWxWgqWJUN0RvDNAo+Nz/9GxB+nHOH0ifbVFy0hSA1V6vFDvnx54lTEQ==}
     engines: {node: '>=14'}
@@ -2077,9 +2056,6 @@ packages:
 
   lru-cache@5.1.1:
     resolution: {integrity: sha512-KpNARQA3Iwv+jTA0utUVVbrh+Jlrr1Fv0e56GGzAFOXN7dk/FviaDW8LHmK52DlcH4WP2n6gI8vN1aesBFgo9w==}
-
-  magic-string@0.30.12:
-    resolution: {integrity: sha512-Ea8I3sQMVXr8JhN4z+H/d8zwo+tYDgHE9+5G4Wnrwhs0gaK9fXTKx0Tw5Xwsd/bCPTTZNRAdpyzvoeORe9LYpw==}
 
   magic-string@0.30.17:
     resolution: {integrity: sha512-sNPKHvyjVf7gyjwS4xGTaW/mCnF8wnjtifKBEhxfZ7E/S8tQ0rssrwGNn6q8JH/ohItJfSQp9mBtQYuTlH5QnA==}
@@ -2727,9 +2703,6 @@ packages:
   tinybench@2.9.0:
     resolution: {integrity: sha512-0+DUvqWMValLmha6lr4kD8iAMK1HzV0/aKnCtWb9v9641TnP/MFb7Pc2bxoxQjTXAErryXVgUOfv2YqNllqGeg==}
 
-  tinyexec@0.3.1:
-    resolution: {integrity: sha512-WiCJLEECkO18gwqIp6+hJg0//p23HXp4S+gGtAKu3mI2F2/sXC4FvHvXvB0zJVVaTPhx1/tOwdbRsa1sOBIKqQ==}
-
   tinyexec@0.3.2:
     resolution: {integrity: sha512-KQQR9yN7R5+OSwaK0XQoj22pwHoTlgYqmUscPYoknOoWCWfj/5/ABTMRi69FrKU5ffPVh5QcFikpWJI/P1ocHA==}
 
@@ -3130,7 +3103,7 @@ snapshots:
   '@antfu/install-pkg@0.4.1':
     dependencies:
       package-manager-detector: 0.2.2
-      tinyexec: 0.3.1
+      tinyexec: 0.3.2
 
   '@antfu/utils@0.7.10': {}
 
@@ -3483,9 +3456,9 @@ snapshots:
       '@antfu/install-pkg': 0.4.1
       '@antfu/utils': 0.7.10
       '@iconify/types': 2.0.0
-      debug: 4.3.7
+      debug: 4.4.0
       kolorist: 1.8.0
-      local-pkg: 0.5.0
+      local-pkg: 0.5.1
       mlly: 1.7.3
     transitivePeerDependencies:
       - supports-color
@@ -3547,21 +3520,13 @@ snapshots:
 
   '@rollup/plugin-inject@5.0.5(rollup@4.27.2)':
     dependencies:
-      '@rollup/pluginutils': 5.1.3(rollup@4.27.2)
+      '@rollup/pluginutils': 5.1.4(rollup@4.27.2)
       estree-walker: 2.0.2
-      magic-string: 0.30.12
+      magic-string: 0.30.17
     optionalDependencies:
       rollup: 4.27.2
 
   '@rollup/plugin-virtual@3.0.2(rollup@4.27.2)':
-    optionalDependencies:
-      rollup: 4.27.2
-
-  '@rollup/pluginutils@5.1.3(rollup@4.27.2)':
-    dependencies:
-      '@types/estree': 1.0.6
-      estree-walker: 2.0.2
-      picomatch: 4.0.2
     optionalDependencies:
       rollup: 4.27.2
 
@@ -4445,13 +4410,7 @@ snapshots:
 
   cross-env@7.0.3:
     dependencies:
-      cross-spawn: 7.0.5
-
-  cross-spawn@7.0.5:
-    dependencies:
-      path-key: 3.1.1
-      shebang-command: 2.0.0
-      which: 2.0.2
+      cross-spawn: 7.0.6
 
   cross-spawn@7.0.6:
     dependencies:
@@ -4818,14 +4777,6 @@ snapshots:
   fast-deep-equal@3.1.3: {}
 
   fast-diff@1.3.0: {}
-
-  fast-glob@3.3.2:
-    dependencies:
-      '@nodelib/fs.stat': 2.0.5
-      '@nodelib/fs.walk': 1.2.8
-      glob-parent: 5.1.2
-      merge2: 1.4.1
-      micromatch: 4.0.8
 
   fast-glob@3.3.3:
     dependencies:
@@ -5195,11 +5146,6 @@ snapshots:
 
   lines-and-columns@1.2.4: {}
 
-  local-pkg@0.5.0:
-    dependencies:
-      mlly: 1.7.3
-      pkg-types: 1.2.1
-
   local-pkg@0.5.1:
     dependencies:
       mlly: 1.7.3
@@ -5224,10 +5170,6 @@ snapshots:
   lru-cache@5.1.1:
     dependencies:
       yallist: 3.1.1
-
-  magic-string@0.30.12:
-    dependencies:
-      '@jridgewell/sourcemap-codec': 1.5.0
 
   magic-string@0.30.17:
     dependencies:
@@ -5904,7 +5846,7 @@ snapshots:
       chokidar: 3.6.0
       didyoumean: 1.2.2
       dlv: 1.1.3
-      fast-glob: 3.3.2
+      fast-glob: 3.3.3
       glob-parent: 6.0.2
       is-glob: 4.0.3
       jiti: 1.21.6
@@ -5937,8 +5879,6 @@ snapshots:
       setimmediate: 1.0.5
 
   tinybench@2.9.0: {}
-
-  tinyexec@0.3.1: {}
 
   tinyexec@0.3.2: {}
 
@@ -6005,7 +5945,7 @@ snapshots:
       acorn: 8.14.0
       escape-string-regexp: 5.0.0
       estree-walker: 3.0.3
-      fast-glob: 3.3.2
+      fast-glob: 3.3.3
       local-pkg: 0.5.1
       magic-string: 0.30.17
       mlly: 1.7.3
@@ -6243,7 +6183,7 @@ snapshots:
 
   vue-eslint-parser@9.4.3(eslint@9.18.0(jiti@2.4.0)):
     dependencies:
-      debug: 4.3.7
+      debug: 4.4.0
       eslint: 9.18.0(jiti@2.4.0)
       eslint-scope: 7.2.2
       eslint-visitor-keys: 3.4.3
