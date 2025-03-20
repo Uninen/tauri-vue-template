@@ -1,22 +1,51 @@
 {
-  "extends": ["config:recommended", "group:all", "schedule:weekly", ":widenPeerDependencies"],
-  "enabledManagers": ["cargo", "github-actions", "npm"],
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:recommended"],
+  "enabledManagers": ["cargo", "npm", "github-actions"],
+  "timezone": "Europe/Helsinki",
+  "dependencyDashboard": true,
+  "lockFileMaintenance": {
+    "enabled": true,
+    "automerge": true,
+    "schedule": ["after 4am and before 8am on Tuesday"]
+  },
   "packageRules": [
     {
-      "matchUpdateTypes": ["patch"],
-      "enabled": false
-    },
-    {
-      "matchManagers": ["cargo"],
+      "description": "Default automerge settings for all updates",
+      "matchManagers": ["cargo", "npm", "github-actions"],
       "automerge": true,
-      "minimumReleaseAge": "2 days"
+      "automergeSchedule": ["after 4am and before 8am on Monday and Thursday"]
     },
     {
+      "description": "Add minimum release age for npm packages",
       "matchManagers": ["npm"],
-      "automerge": true,
-      "minimumReleaseAge": "2 days"
+      "minimumReleaseAge": "3 days"
+    },
+    {
+      "description": "Add minimum release age for cargo packages",
+      "matchManagers": ["cargo"],
+      "minimumReleaseAge": "3 days"
+    },
+    {
+      "description": "Group tooling deps",
+      "matchManagers": ["github-actions"],
+      "groupName": "github actions",
+      "labels": ["deps", "ci"],
+      "commitMessagePrefix": "chore(tooling)"
+    },
+    {
+      "description": "Group node dependencies",
+      "matchFileNames": ["package.json", "pnpm-lock.yaml"],
+      "groupName": "frontdeps",
+      "labels": ["deps"],
+      "commitMessagePrefix": "chore(front-deps)"
+    },
+    {
+      "description": "Group cargo dependencies",
+      "matchFileNames": ["src-tauri/Cargo.toml", "src-tauri/Cargo.lock"],
+      "groupName": "cargodeps",
+      "labels": ["deps"],
+      "commitMessagePrefix": "chore(cargo-deps)"
     }
-  ],
-  "timezone": "Europe/Helsinki",
-  "dependencyDashboard": true
+  ]
 }
