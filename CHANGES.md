@@ -1,5 +1,12 @@
 # Changelog
 
+## 2.3.0 (2025-03-20)
+
+- Enhancement: open browser devtools by default.
+- Refactor: bumped Tailwind to version 4.
+- Fix: allow pnpm postinstall scripts (Fixes #87, thanks @onurusluca for the report)
+- Chore: bumped all deps.
+
 ## 2.0.2 (2024-11-16)
 
 - Feat: added `@egoist/tailwindcss-icons` plugin.
