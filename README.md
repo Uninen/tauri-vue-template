@@ -89,8 +89,8 @@ pnpm tauri build
 
 ## Elsewhere
 
-- [Follow @uninen](https://twitter.com/uninen) on Twitter
-- Read my continuously updating learnings around Tauri / Vue / TypeScript and other Web development topics from my [Today I Learned site](https://til.unessa.net/)
+- Follow [unessa.net on Bluesky](https://bsky.app/profile/uninen.net) or [@uninen on Twitter](https://twitter.com/uninen)
+- Read my learnings around Tauri / Vue / TypeScript and other Web dev topics from my [Today I Learned site](https://til.unessa.net/)
 
 ## Contributing
 
