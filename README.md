@@ -9,7 +9,7 @@ Fully configured project template for Tauri and Vue 3 w/ TypeScript and CI.
 - **Vue 3 (TypeScript)** frontend (with devtools)
 - **Vite** configured w/ [AutoImport plugin](https://github.com/antfu/unplugin-auto-import)
 - **Vitest** for unit tests
-- **Github Actions** fo proper testing / CI pipeline
+- **Github Actions** for proper testing / CI pipeline
 - **VS Code** configs for recommended plugins and debugging
 
 ## Setting Up
