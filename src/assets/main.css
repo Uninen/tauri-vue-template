@@ -29,7 +29,6 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 
-*,
 a,
 button {
   @apply cursor-default select-none;
@@ -66,4 +65,8 @@ p {
 
 input {
   @apply bg-gray-700 text-gray-200 px-3 py-2 rounded-md my-4 border border-gray-700 mx-2;
+}
+
+input, textarea {
+  @apply select-auto;
 }
