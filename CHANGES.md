@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.6.0 (2025-06-25)
+
+- Refactor: bumped Vite target versions to `safari16` and `chrome107` (matches Vite 7 'baseline-widely-available' defaults)
+- Refactor: tweaked the included VSCode settings.
+- Chore: bumped all deps.
+
 ## 2.3.0 (2025-03-20)
 
 Note: starting from this release, the versioning of this template will follow

@@ -68,10 +68,11 @@ export default defineConfig({
   },
   build: {
     outDir: './dist',
-    // See https://v2.tauri.app/reference/webview-versions/ for details
+    // See https://web-platform-dx.github.io/web-features/ for Vite 7 default targets (baseline-widely-available)
+    // See https://v2.tauri.app/reference/webview-versions/ for Tauri details
     target: PLATFORM == 'windows'
-        ? 'chrome105'
-        : 'safari13',
+        ? 'chrome107'
+        : 'safari16',
     minify: !process.env.TAURI_DEBUG ? 'esbuild' : false,
     emptyOutDir: true,
     chunkSizeWarningLimit: 1024,
