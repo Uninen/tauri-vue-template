@@ -1,5 +1,10 @@
 # Changelog
 
+## 2.9.0 (2025-10-29)
+
+- Refactor: moved Tailwind 4 config into `main.css`.
+- Chore: bumped all deps.
+
 ## 2.6.0 (2025-06-25)
 
 - Refactor: bumped Vite target versions to `safari16` and `chrome107` (matches Vite 7 'baseline-widely-available' defaults)
