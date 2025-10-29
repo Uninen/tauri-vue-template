@@ -3,6 +3,7 @@
 ## 2.9.0 (2025-10-29)
 
 - Refactor: moved Tailwind 4 config into `main.css`.
+- Chore: bumped CI Node version to 24.
 - Chore: bumped all deps.
 
 ## 2.6.0 (2025-06-25)
