@@ -1,5 +1,10 @@
 # Changelog
 
+## 2.9.3 (2025-11-27)
+
+- Feat: added `rust-toolchain.toml` to explicitly set stable toolchain.
+- Chore: bumped all deps.
+
 ## 2.9.0 (2025-10-29)
 
 - Refactor: moved Tailwind 4 config into `main.css`.
