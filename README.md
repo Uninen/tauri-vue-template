@@ -2,66 +2,63 @@
 
 ![Screenshot](./public/v2_screenshot.webp)
 
-Fully configured project template for Tauri and Vue 3 w/ TypeScript and CI.
+A production-ready template to build fast, secure desktop apps with Tauri and Vue.
 
 ## Features
 
-- **Vue 3 (TypeScript)** frontend (with devtools)
-- **Vite** configured w/ [AutoImport plugin](https://github.com/antfu/unplugin-auto-import)
-- **Vitest** for unit tests
-- **Github Actions** for proper testing / CI pipeline
-- **VS Code** configs for recommended plugins and debugging
+- **Vue 3 + TypeScript** - Type-safe frontend with devtools
+- **Tailwind 4** - CSS preconfigured for native app development
+- **Vite** - Fast builds with [AutoImport](https://github.com/antfu/unplugin-auto-import) for cleaner code
+- **Vitest** - Unit testing ready to go
+- **CI/CD included** - GitHub Actions for automated testing, builds, and releases
+- **VS Code ready** - Debugging configs and recommended extensions
 
-## Setting Up
+## Quick Start
 
-1. Install [Tauri Prerequisites](https://tauri.app/start/prerequisites/)
-2. Clone and install dependencies (this template uses `pnpm` by default):
+1. Install [Tauri prerequisites](https://tauri.app/start/prerequisites/)
+2. Clone and install dependencies:
 
 ```sh
 pnpm i
 ```
 
-## Usage
-
-A Tauri app has at least [two processes](https://tauri.app/concept/process-model/):
-
-- the Core Process (`backend`, or _main_ process in Electron terminology), and
-- the WebView process (`frontend`, or _renderer_ in Electron)
-
-### 🦢 Frontend (TS, PnPM)
-
-#### Running Development Server
-
-Both back- and frontend start with a single command:
+1. Run the development server (starts both the backend and frontend dev servers and opens the devtools):
 
 ```sh
 pnpm tauri dev
 ```
 
-#### Testing
+## Project Structure and Usage
+
+A Tauri app has [two processes](https://tauri.app/concept/process-model/):
+
+- **Core Process** (`backend`, or _main_ process in Electron terminology)
+- **WebView process** (`frontend`, _renderer_ in Electron)
+
+### Frontend (TS, PnPM)
+
+Frontend code lives in `src/`. See `package.json` for all available commands.
+
+**Testing:**
 
 ```sh
 pnpm test
 ```
 
-### 🦀 Backend (Rust, Cargo)
+### Backend (Rust, Cargo)
 
-Backend code lives in `src-tauri/` (Following commands are to be run from there.)
+Backend code lives in `src-tauri/`.
 
-#### Finding Outdated Rust Dependencies
-
-If you have [cargo-outdated](https://github.com/kbknapp/cargo-outdated) installed:
+**Finding outdated dependencies** (requires [cargo-outdated](https://github.com/kbknapp/cargo-outdated)):
 
 ```sh
-cargo outdated
+cd src-tauri && cargo outdated
 ```
 
-#### Upgrading Rust Dependencies
-
-If you have [cargo-edit](https://github.com/killercup/cargo-edit) installed:
+**Upgrading dependencies** (requires [cargo-edit](https://github.com/killercup/cargo-edit)):
 
 ```sh
-cargo upgrade
+cd src-tauri && cargo upgrade
 ```
 
 ### Debugging
@@ -73,7 +70,7 @@ cargo upgrade
 
 #### Building
 
-The project has GitHub Actions set up which will automatically test and build your app with every push and PR. For building manually:
+The project has GitHub Actions set up which will automatically test and build your app with every push and PR. To build manually run:
 
 ```sh
 pnpm tauri build
@@ -87,11 +84,12 @@ pnpm tauri build
 4. Edit the release notes and push (also tags!)
 5. Github workflow will automatically build a new draft release for this version. Publish when ready 🎉
 
-## Elsewhere
+## Follow Along
 
-- Follow [unessa.net on Bluesky](https://bsky.app/profile/uninen.net) or [@uninen on Twitter](https://twitter.com/uninen)
-- Read my learnings around Tauri / Vue / TypeScript and other Web dev topics from my [Today I Learned site](https://til.unessa.net/)
+- Follow [@uninen on X](https://x.com/uninen) or [uninen.net on Bluesky](https://bsky.app/profile/uninen.net)
+- Read my learnings around Tauri / Vue / TypeScript and other Web dev topics from my [Today I Learned blog](https://til.unessa.net/)
+- If you speak Finnish, check out [Koneoppiblogi](https://koneoppiblogi.uninen.net)
 
 ## Contributing
 
-Contributions are welcome! Please follow the [code of conduct](./CODE_OF_CONDUCT.md) when interacting with others.
+Contributions are welcome! Please [be nice](./CODE_OF_CONDUCT.md) when interacting with others.
