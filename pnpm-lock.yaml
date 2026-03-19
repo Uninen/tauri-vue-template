@@ -42,9 +42,9 @@ importers:
       '@tauri-apps/cli':
         specifier: ^2.10.0
         version: 2.10.1
-      '@tsconfig/node22':
-        specifier: ^22.0.5
-        version: 22.0.5
+      '@tsconfig/node24':
+        specifier: ^24.0.0
+        version: 24.0.4
       '@types/lodash-es':
         specifier: ^4.17.12
         version: 4.17.12
@@ -1094,8 +1094,8 @@ packages:
   '@tauri-apps/plugin-shell@2.3.5':
     resolution: {integrity: sha512-jewtULhiQ7lI7+owCKAjc8tYLJr92U16bPOeAa472LHJdgaibLP83NcfAF2e+wkEcA53FxKQAZ7byDzs2eeizg==}
 
-  '@tsconfig/node22@22.0.5':
-    resolution: {integrity: sha512-hLf2ld+sYN/BtOJjHUWOk568dvjFQkHnLNa6zce25GIH+vxKfvTgm3qpaH6ToF5tu/NN0IH66s+Bb5wElHrLcw==}
+  '@tsconfig/node24@24.0.4':
+    resolution: {integrity: sha512-2A933l5P5oCbv6qSxHs7ckKwobs8BDAe9SJ/Xr2Hy+nDlwmLE1GhFh/g/vXGRZWgxBg9nX/5piDtHR9Dkw/XuA==}
 
   '@tybys/wasm-util@0.10.1':
     resolution: {integrity: sha512-9tTaPJLSiejZKx+Bmog4uSubteqTvFrVrURwkmHixBo0G4seD0zUxp98E1DzUBJxLQ3NPwXrGKDiVjwx/DpPsg==}
@@ -4136,7 +4136,7 @@ snapshots:
     dependencies:
       '@tauri-apps/api': 2.10.1
 
-  '@tsconfig/node22@22.0.5': {}
+  '@tsconfig/node24@24.0.4': {}
 
   '@tybys/wasm-util@0.10.1':
     dependencies:
