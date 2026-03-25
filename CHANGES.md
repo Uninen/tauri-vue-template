@@ -1,8 +1,8 @@
 # Changelog
 
-## 2.9.3 (2025-11-27)
+## 2.10.3 (2026-03-25)
 
-- Feat: added `rust-toolchain.toml` to explicitly set stable toolchain.
+- Feat: added `minimumReleaseAge` pnpm setting for added security.
 - Chore: bumped all deps.
 
 ## 2.9.0 (2025-10-29)
